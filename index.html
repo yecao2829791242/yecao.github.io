@@ -1,66 +1,371 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.1" type="image/png" sizes="32x32"><meta property="og:type" content="website">
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="">
+  <title>yecaoBlog</title>
+  <meta name="author" content="yecao" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="技术分享-动漫-相同喜好-个人爱好" />
+  
+  <meta name="description" content="交流、技术、动漫、音乐">
+<meta property="og:type" content="website">
 <meta property="og:title" content="yecaoBlog">
 <meta property="og:url" content="https://yecao2829791242.github.io/index.html">
 <meta property="og:site_name" content="yecaoBlog">
+<meta property="og:description" content="交流、技术、动漫、音乐">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary"><title>yecaoBlog</title><link ref="canonical" href="https://yecao2829791242.github.io/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
-var CONFIG = {
-  root: '/',
-  algolia: undefined,
-  assistSearch: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
+<meta property="og:image" content="https://yecao2829791242.github.io/null">
+<meta property="article:author" content="yecao">
+<meta property="article:tag" content="技术分享-动漫-相同喜好-个人爱好">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yecao2829791242.github.io/null">
+<meta name="twitter:site" content="@null">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.css">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">yecaoBlog</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/08/My-New-Post/">My New Post</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-08</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>我的博客</p>
-<p><a href="www.baidu.com">百度</a></p>
-<img src="" alt="logo"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/07/hello-world/">Hello World</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-01-07</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-01-07</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Welcome to <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>! This is your very first post. Check <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> or you can ask me on <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.</p>
 
-        <h2 id="quick-start"   >
-          <a href="#quick-start" class="heading-link"><i class="fas fa-link"></i></a>Quick Start</h2>
-      
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <div class="nav-toggle"><a class="kratos-nav-toggle js-kratos-nav-toggle"><i></i></a></div>
+            <header id="kratos-header-section">
+                <div class="container">
+                    <div class="nav-header">
+                        <div class="color-logo"><a href="/">yecaoBlog</a></div>
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a><i class="fa fa-link"></i>链接</a>
+                                            <ul class="sub-menu">
+                                                
+                                                    
+                                                
+                                                    
+                                                        <li><a href="https://candinya.com"></a></li>
+                                                    
+                                                
+                                                    
+                                                        <li><a href="https://github.com/Candinya/Kratos-Rebirth"></a></li>
+                                                    
+                                                
+                                            </ul>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>yecaoBlog</h2> <br />
+                        <span>yecao</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        <h3 id="create-a-new-post"   >
-          <a href="#create-a-new-post" class="heading-link"><i class="fas fa-link"></i></a>Create a new post</h3>
-      
-<pre class="highlight"><code class="bash">$ hexo new <span class="hljs-string">"My New Post"</span>
-</code></pre>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
 
-        <h3 id="run-server"   >
-          <a href="#run-server" class="heading-link"><i class="fas fa-link"></i></a>Run server</h3>
-      
-<pre class="highlight"><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+        <section class="col-md-8">
+    
+        
+        
+            <article class="kratos-hentry clearfix">
+                <div class="kratos-entry-border-new clearfix">
+                    
+                    <div class="kratos-entry-thumb-new">
+                        <a href="/2021/01/08/My-New-Post/">
+                            
+                                <img class="kratos-entry-thumb-new-img">
+                            
+                        </a>
+                    </div>
+                    <div class="kratos-post-inner-new">
+                        <header class="kratos-entry-header-new">
+                                
+                            <h2 class="kratos-entry-title-new"><a href="/2021/01/08/My-New-Post/">My New Post</a>
+                        </header>
+                        <div class="kratos-entry-content-new">
+                            <p>
+                                
+                                    我的博客
+百度
 
-        <h3 id="generate-static-files"   >
-          <a href="#generate-static-files" class="heading-link"><i class="fas fa-link"></i></a>Generate static files</h3>
-      
-<pre class="highlight"><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="kratos-post-meta-new">
+                        <span class="pull-left">
+                            <a><i class="fa fa-calendar"></i></a><a>2021-01-08</a>
+                            <a><i class="fa fa-tags"></i></a>
+                            
+                        </span>
+                        <span class="pull-right">
+                            <a class="read-more" href="/2021/01/08/My-New-Post/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        </span>
+                    </footer>
+                </div>
+            </article>
+        
+    
+        
+        
+            <article class="kratos-hentry clearfix">
+                <div class="kratos-entry-border-new clearfix">
+                    
+                    <div class="kratos-entry-thumb-new">
+                        <a href="/2021/01/07/hello-world/">
+                            
+                                <img class="kratos-entry-thumb-new-img">
+                            
+                        </a>
+                    </div>
+                    <div class="kratos-post-inner-new">
+                        <header class="kratos-entry-header-new">
+                                
+                            <h2 class="kratos-entry-title-new"><a href="/2021/01/07/hello-world/">Hello World</a>
+                        </header>
+                        <div class="kratos-entry-content-new">
+                            <p>
+                                
+                                    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="kratos-post-meta-new">
+                        <span class="pull-left">
+                            <a><i class="fa fa-calendar"></i></a><a>2021-01-07</a>
+                            <a><i class="fa fa-tags"></i></a>
+                            
+                        </span>
+                        <span class="pull-right">
+                            <a class="read-more" href="/2021/01/07/hello-world/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        </span>
+                    </footer>
+                </div>
+            </article>
+        
+    
+    
+    
+</section>
 
-        <h3 id="deploy-to-remote-sites"   >
-          <a href="#deploy-to-remote-sites" class="heading-link"><i class="fas fa-link"></i></a>Deploy to remote sites</h3>
-      
-<pre class="highlight"><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.3.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.1"></script><script src="/js/stun-boot.js?v=2.6.1"></script><script src="/js/scroll.js?v=2.6.1"></script><script src="/js/header.js?v=2.6.1"></script><script src="/js/sidebar.js?v=2.6.1"></script></body></html>
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/log.jpg" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">交流、技术、动漫、音乐</p>
+    </div>
+</aside>
+            
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2021/01/08/My-New-Post/"><i class="fa  fa-book"></i> My New Post</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2021/01/07/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
+            
+          
+        
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        <li><a href="mailto:2829791242@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
+                        
+                        
+                        
+                        <li><a target="_blank" rel="me" href="https://nya.one/@yecao"><i class="fa fa fa-share-alt-square"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/yecao2829791242"><i class="fa fa-github"></i></a></li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2021 yecaoBlog 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by yecao.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            <li><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank">萌ICP备22010101号</a></li>
+                            <li><a href="http://www.beian.gov.cn" rel="external nofollow" target="_blank"><img src="/images/psr.webp" width="12" height="12">371402000001</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async type="text/javascript" src="/js/snow.min.js"></script>
+    </div>
+
+<script async src="/js/candy.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="723417139"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+    <script defer src="/js/kr-dark.min.js"></script>
+
+
+    </body>
+</html>
