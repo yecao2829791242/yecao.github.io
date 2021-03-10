@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>友情链接 | yecao</title>
+  <title>javaScript中的面向对象ES6(重点) | yecao</title>
 
   
     
@@ -414,37 +414,301 @@
     
 </header>
     <main class="main" style="margin-top: 60px;">
-      <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="lazyload friends-header" data-original="/medias/c5.jpg" style="width: 100%;height: 50vh;overflow: hidden;background-size: cover; 
-background-position: center center;">
-<!-- <img src="https://pic4.zhimg.com/80/v2-1a6ab86d51b8abb6be95c970e054adf6_1440w.jpg" alt="" style="width: 100%;"> -->
+      
+ <!-- prismjs 代码高亮 -->
+ 
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;" :style="{'background-color': bgColor ? bgColor : 'transparent'}">
+    <transition-group tag="ul" :name="names">
+        <li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+            <img :src="image" class="bg-swiper-img">
+        </li>
+    </transition-group>
 </div>
-<div class="container" id="friends">
-  <div class="friends-title">
-    <i class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;友情链接
-  </div>
-  <div class="friends">
-    
+<script>
+    var vm = new Vue({
+        el: '#appBgSwiper',
+        data: {
+            names: '' || 'fade' || 'fade', // translate-fade fade
+            mark: 0,
+            img: [],
+            bgColor: '',
+            time: null
+        },
+        methods: {   //添加方法
+            change(i, m) {
+                if (i > m) {
+                    // this.names = 'fade';
+                } else if (i < m) {
+                    // this.names = 'fade';
+                } else {
+                    return;
+                }
+                this.mark = i;
+            },
+            prev() {
+                // this.names = 'fade';
+                this.mark--;
+                if (this.mark === -1) {
+                    this.mark = 3;
+                    return
+                }
+            },
+            next() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            autoPlay() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            play() {
+                let bgImgDelay = '' || '180000'
+                let delay = parseInt(bgImgDelay) || 180000;
+                this.time = setInterval(this.autoPlay, delay);
+            },
+            enter() {
+                clearInterval(this.time);
+            },
+            leave() {
+                this.play();
+            }
+        },
+        created() {
+            this.play()
+        },
+        beforeDestroy() {
+            clearInterval(this.time);
+        },
+        mounted() {
+            let prop = ''|| '/medias/c6.jpg,/medias/b5.jpg,/medias/b12.jpg,/medias/b9.jpg,/medias/b10.jpg';
+            let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://') 
+            if (isImg) {
+                let img = prop.split(',');
+                let configRoot = '/'
+                let arrImg = [];
+                img.forEach(el => {
+                    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+			        var objExp = new RegExp(Expression);
+
+                    if(objExp.test(el)) {
+                        // http or https
+                        arrImg.push(el);
+                    } else {
+                        // 非http or https开头
+                        // 本地文件
+                        let firstStr = el.charAt(0);
+                        if (firstStr == '/') {
+                            el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+                        }
+                        el = configRoot + el;
+                        arrImg.push(el);
+                    }
+                })
+                this.img = arrImg;
+            } else {
+                this.bgColor = prop;
+            }
+        }
+    })
+</script>
+
+<style>
+    .bg-swiper-box {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .bg-swiper-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+
+
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/cy.jpg" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
+  
+    <div class="title-box">
+      
+        <span class="title" id="post-detail-header-title"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+          <script>
+            var typed = new Typed("#post-detail-header-title", {
+              strings: ['javaScript中的面向对象ES6(重点)'],
+              startDelay: 100,
+              typeSpeed: 100,
+              loop: false,
+              backSpeed: 50,
+              showCursor: false
+            });
+          </script>
+        
+    </div>
+  
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
+</div>
+
+
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2021-03-09</span>
+      </div>
+      
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/jsvaScript/" class="">
+              jsvaScript
+            </a>
+          
+        </div>
+        
+        
+        <div class="categories">
+          <i class="iconfont iconbookmark1"></i>
+          
+            <a href="/categories/js/" class="">
+              js
+            </a>
+          
+        </div>
+        
+      </div>
+      <div class="post-content">
+        <h2 id="javascript中的面向对象概念es6"><a class="markdownIt-Anchor" href="#javascript中的面向对象概念es6"></a> javaScript中的面向对象概念(ES6)</h2>
+<h3 id="1-什么是对象"><a class="markdownIt-Anchor" href="#1-什么是对象"></a> 1. 什么是对象？</h3>
+<p>​		1. 现实生活中:万物皆对象，对象是一个具体的事物，看的见摸得着的实物。例如，一本书、一辆汽车、一个人可以是&quot;对象&quot;，一个数据库、一张网页、一个与远程服务器的连接也可以是&quot;对象&quot;(千万别理解成那个对象)。</p>
+<p>​		2. 在javaScript中,对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。</p>
+<p>​		3. <span>面向对象更贴近我们的实际生活，可以使用面向对象来描述现实事物，但是事物分为具体的事物和抽象的事物。</span></p>
+<p>比如:手机    抽想的(泛指的)  具体的(特指的)</p>
+<p>​		4. 对象是由属性和方法组成的。</p>
+<ul>
+<li>属性：事物的特征，在对象中用属性来表示(常用名词)</li>
+<li>方法：事物的行为，在对象中用方法来表示(常用动词)</li>
+</ul>
+<h3 id="2-面向对象的思维特点"><a class="markdownIt-Anchor" href="#2-面向对象的思维特点"></a> 2. 面向对象的思维特点</h3>
+<p>​	1. 抽取(抽象)对象共用的属性和行为组织(封装)成一个类(模板)。</p>
+<p>​	2. 对类进行实例化，获取类的对象。</p>
+<p>​	3. 面向对象编程我们考虑的是有哪些对象，按照面向对象的思维特点不断的创建对象，使用对象，指挥对象做事情。</p>
+<h3 id="3-类-class"><a class="markdownIt-Anchor" href="#3-类-class"></a> 3. 类 class</h3>
+<blockquote>
+<p>在ES6中新增加类的概念，可以使用关键字声明一个类，之后这个类来实例化对象。</p>
+<p>类抽象了对象的公共部分，它泛指某一大类。比如:手机 苹果</p>
+<p>例子：对象特指某一个，通过类实例化一个具体的对象。比如我正在吃苹果。</p>
+</blockquote>
+<h3 id="4-创建类"><a class="markdownIt-Anchor" href="#4-创建类"></a> 4. 创建类</h3>
+<p>​	语法：class 类名{//代码内容}</p>
+<p>​	<code>var xx = new Uname</code></p>
+<p>​	<em>注意：类必须new来实例化对象</em></p>
+<h3 id="5-constructor构造函数"><a class="markdownIt-Anchor" href="#5-constructor构造函数"></a> 5. constructor构造函数</h3>
+<blockquote>
+<p>constructor()方法是类的构造函数(默认方法)，用于传递参数，返回实例对象,通过new命令生成对象实例时，自动调用该方法，如果没有显示定义，类的内部会自动给我们创建一个constructor()</p>
+</blockquote>
+<p>​	实例：</p>
+
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>yecao</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2021/03/09/javascript-zhong-de-mian-xiang-dui-xiang-es6-chong-dian/" target="_blank" title="javaScript中的面向对象ES6(重点)">https://yecao2829791242.github.io/2021/03/09/javascript-zhong-de-mian-xiang-dui-xiang-es6-chong-dian/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
     
       
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://s3.ax1x.com/2021/03/10/6JR0gO.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://sakurafeiyu.top" target="_blank">
-              花诽语
-            </a>
-          </div>
-          <div class="friend-introduction">授人以鱼不如授人以渔</div>
-        </div>
-      </div>
-    
-  </div>
-  <!-- 评论 -->
+<div class="post-nav">
+
+
+
   
-    <section id="comments" style="padding: 1em; margin: 15px auto;"
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img lazyload" data-original="/medias/c1.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/2021/03/10/xxx/" class="post-nav-link">
+      <div class="title">
+        <i class="fa fa-angle-left"></i> 上一篇:
+        <div>第一个博客</div>
+      </div>
+      
+      <!-- <div class="content">
+        
+      </div> -->
+    </a>
+  </div>
+
+
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+      
+        <div id="myComment">
+          
+            <section id="comments" style="padding: 1em; margin: 15px auto;"
 	class="animated bounceInUp">
 	<div id="vcomment" class="comment"></div>
 	<script src="/js/valine/av-min@3.0.4.js"></script>
@@ -1323,8 +1587,119 @@ background-position: center center;">
 		box-shadow: none;
 	}
 </style>
+          
+        </div>
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+          <div class="toc-open-close">本文目录</div>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+.toc-main ul {
+  counter-reset: show-list;
+}
+.toc-main ul li::before {
+  content: counter(item)".";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top:0;
+}
+.toc > .toc-list {
+  padding-left: 35px;
+}
+.toc>.toc-list li {
+  list-style: decimal;
+}
+.toc-list {
+  padding-left: 25px;
+}
+</style>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    </script>
   
 </div>
+
+
     </main>
     <div class="footer bg-color">
   <div class="footer-main">
