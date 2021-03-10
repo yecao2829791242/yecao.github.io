@@ -158,11 +158,11 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
 }
 ::-moz-selection {
-  background: rgba(66,185,131,0.8);
+  background: rgba(96,150,186,0.8);
   color: #fff;
 }
 ::selection {
-  background: rgba(66,185,131,0.8);
+  background: rgba(96,150,186,0.8);
   color: #fff;
 }
 .bg-floor {
