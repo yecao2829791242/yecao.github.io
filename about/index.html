@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- meta/link... -->
   
 
 
@@ -64,24 +65,56 @@
     </style>
     <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/blog/atom.xml" title="yecao" type="application/atom+xml">
+</head>
 
+  
+  <!-- 依赖于jquery和vue -->
   <script src="/blog/js/jquery3.5.1.js"></script>
   <script src="/blog/js/vue2.6.11.js"></script>
-  <link href="/blog/js/danmu/barrager.css" rel="stylesheet">
-<script src="/blog/js/danmu/jquery.barrager.js"></script>
+  
   <body>
+    <!-- 预加载动画 -->
+    <!-- 页面预加载动画 -->
+
+<div id='loader'>
+  <link rel="stylesheet" href="/blog/js/loaded/index.css" >
+  <div class="loading-left-bg"></div>
+  <div class="loading-right-bg"></div>
+  <div class="spinner-box">
+    <div class="configure-border-1">
+      <div class="configure-core"></div>
+    </div>
+    <div class="configure-border-2">
+      <div class="configure-core"></div>
+    </div>
+    <div class="loading-word">加载中...</div>
+  </div>
+</div>
+
+<script>
+  var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
+    
+    <!-- 判断是否为暗黑风格 -->
     <!-- 判断是否为黑夜模式 -->
-    <script>
-      let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+<script>
+  let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
 
-      if (isDark) {
-        $(document.body).addClass('darkModel');
-      }
-    </script>
+  if (isDark) {
+    $(document.body).addClass('darkModel');
+  }
+</script>
 
-    <header class="header bg-color" 
-  style="position: fixed; 
+    <!-- 头部导航等 -->
+    
+<header class="header " id="navHeader"
+  style="position: fixed;
   left: 0; top: 0; z-index: 10;width: 100%;"
 >
   <div class="header-content">
@@ -94,66 +127,123 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo" src="/blog/medias/log.jpg" alt="logo">
+      <img class="drawer-box-head_logo" src="/blog/medias/logo.png" alt="logo">
       <h3 class="drawer-box-head_title">yecao</h3>
       <h5 class="drawer-box-head_desc">交流、技术、动漫、音乐</h5>
     </div>
+    
     <div class="drawer-box-content">
       <ul class="drawer-box-content_menu">
         
-          <li class="drawer-box-content_item">
-            <a href="/blog/" class="menu-item-link">
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="/blog/" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
               
-              <span>首页</span>
-            </a>
-          </li>
-        
-          <li class="drawer-box-content_item">
-            <a href="/blog/archives" class="menu-item-link">
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="/blog/archives" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
               
-              <span>归档</span>
-            </a>
-          </li>
-        
-          <li class="drawer-box-content_item">
-            <a href="/blog/tags" class="menu-item-link">
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-tags" aria-hidden="true"></i>
+                <a href="/blog/tags" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
               
-              <span>标签</span>
-            </a>
-          </li>
-        
-          <li class="drawer-box-content_item">
-            <a href="/blog/categories" class="menu-item-link">
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <a href="/blog/categories" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
               
-              <span>分类</span>
-            </a>
-          </li>
-        
-          <li class="drawer-box-content_item">
-            <a href="/blog/about" class="menu-item-link">
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="/blog/about" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
+                </a>
               
-              <span>关于</span>
-            </a>
-          </li>
-        
-          <li class="drawer-box-content_item">
-            <a href="/blog/friends" class="menu-item-link">
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
               
-                <i class="fa fa-link" aria-hidden="true"></i>
+                <a href="/blog/friends" class="drawer-menu-item-link">
+                  
+                  <span class="name">友情链接</span>
+                </a>
               
-              <span>友情链接</span>
-            </a>
-          </li>
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
+                  <span>
+                    
+                      <i class="fa fa-link"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
+                  
+                  <li>
+                    <a href="/blog/gallery">
+                      
+                      <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
+                      
+                      <span>项目和案例</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/blog/me">
+                      
+                      <i class="fa fa-user-o" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://baidu.com">
+                      
+                      <i class="fa fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
         
         <li class="drawer-box-content_item">
           <a href="https://github.com/yecao2829791242">
@@ -173,17 +263,33 @@
     data: {
       visible: false,
       top: 0,
+      openArr: [],
     },
     computed: {
     },
     mounted() {
     },
     methods: {
+      isOpen(index) {
+        if (this.openArr.includes(index)) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      openOrCloseMenu(curIndex) {
+        const index = this.openArr.indexOf(curIndex);
+        if (index !== -1) {
+          this.openArr.splice(index, 1);
+        } else {
+          this.openArr.push(curIndex);
+        }
+      },
       showDialogDrawer() {
         this.visible = true;
         // 防止页面滚动，只能让弹框滚动
         this.top = $(document).scrollTop()
-        body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top  + 'px; left: 0; overflow: hidden;';
+        body.style.cssText = 'width: 100%; height: 100%;overflow: hidden;';
       },
       cancelDialogDrawer() {
         this.visible = false;
@@ -194,118 +300,129 @@
     created() {}
   })
 </script>
+
     </div>
     <div class="blog-title" id="author-avatar">
-      <div class="avatar">
-        <img src="/blog/medias/log.jpg" alt="logo">
-      </div>
+      
+        <div class="avatar">
+          <img src="/blog/medias/logo.png" alt="logo">
+        </div>
+      
       <a href="/blog/" class="logo">yecao</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
         
-          <li class="menu-item">
-            <a href="/blog/" class="menu-item-link">
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="/blog/" class="menu-item-link">
+                  
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
               
-              <span>首页</span>
-            </a>
-          </li>
-        
-          <li class="menu-item">
-            <a href="/blog/archives" class="menu-item-link">
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-archive" aria-hidden="true"></i>
+                <a href="/blog/archives" class="menu-item-link">
+                  
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
               
-              <span>归档</span>
-            </a>
-          </li>
-        
-          <li class="menu-item">
-            <a href="/blog/tags" class="menu-item-link">
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-tags" aria-hidden="true"></i>
+                <a href="/blog/tags" class="menu-item-link">
+                  
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
               
-              <span>标签</span>
-            </a>
-          </li>
-        
-          <li class="menu-item">
-            <a href="/blog/categories" class="menu-item-link">
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <a href="/blog/categories" class="menu-item-link">
+                  
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
               
-              <span>分类</span>
-            </a>
-          </li>
-        
-          <li class="menu-item">
-            <a href="/blog/about" class="menu-item-link">
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="/blog/about" class="menu-item-link">
+                  
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
+                </a>
               
-              <span>关于</span>
-            </a>
-          </li>
-        
-          <li class="menu-item">
-            <a href="/blog/friends" class="menu-item-link">
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
               
-                <i class="fa fa-link" aria-hidden="true"></i>
+                <a href="/blog/friends" class="menu-item-link">
+                  
+                  <span class="name">友情链接</span>
+                </a>
               
-              <span>友情链接</span>
-            </a>
-          </li>
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link">
+                  
+                    <i class="fa fa-link"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fa fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/blog/gallery">
+                      
+                      <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
+                      
+                      <span>项目和案例</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/blog/me">
+                      
+                      <i class="fa fa-user-o" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://baidu.com">
+                      
+                      <i class="fa fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
         
       </ul>
       
-        <div class="dark">
-  <div class="dark-content">
-    <i class="fa fa-moon-o" aria-hidden="true"></i>
-    <!-- <span>关灯</span> -->
-  </div>
-  
-</div>
-
-<script>
-  $(function() {
-    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('false');
-    if (isDark) {
-      $(".dark-content").replaceWith(
-          `
-          <div class='dark-content'>
-            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-          </div>
-          `
-        );
-    }
-    $('.dark').click(function() {
-      if ($(document.body).is('.darkModel')) {
-        $(document.body).removeClass('darkModel');
-        localStorage.setItem('dark', false);
-        $(".dark-content").replaceWith(
-          `
-          <div class='dark-content'>
-            <i class="fa fa-moon-o" aria-hidden="true"></i>
-          </div>
-          `
-        );
-      } else {
-        $(document.body).addClass('darkModel');
-        localStorage.setItem('dark', true);
-        $(".dark-content").replaceWith(
-          `
-          <div class='dark-content'>
-            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-          </div>
-          `
-        );
-      }
-    })
-  })
-</script>
-        
       
         <div id="appSearch">
   <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
@@ -316,8 +433,10 @@
           <i class="fa fa-close" aria-hidden="true" style="float:right;" @click.self="cancelDialogVisible()"></i>
         </div> -->
         <h2>
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <span class="title">本地搜索</span>
+          <span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span class="title">本地搜索</span>
+          </span>
           <i class="fa fa-close close" style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i>
         </h2>
         <form class="site-search-form">
@@ -412,12 +531,68 @@
     </script>
     <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
     
+
+    <!-- 当头部导航设置为背景透明的时候  -->
+    
+      <script src="/blog/js/header/index.js"></script>
+    
 </header>
-    <main class="main" style="margin-top: 60px;">
+
+    <!-- 内容区域 -->
+    <main class="main" style="margin-top: 0;">
       
-<div class="lazyload about-header" data-original="/blog/medias/b6.jpg" style="width: 100%;height: 50vh;overflow: hidden;background-size: cover; 
-background-position: center center;">
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
+<div class="bg-light-floor-about" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
+
+<div class="lazyload about-header" data-original="https://pic4.zhimg.com/80/v2-d12b0c9802720897793993a5a199720f_1440w.jpg">
+	<div class="about-header-title">
+		about
+	</div>
+	<div class="about-header-desc">
+	
+	<span class="title" id="about-header-desc"></span>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<script>
+		var typed = new Typed("#about-header-desc", {
+			strings: ['愿你如风，被人温柔以待'],
+			startDelay: 100,
+			typeSpeed: 100,
+			loop: true,
+			backSpeed: 50,
+			showCursor: true
+		});
+		</script>
+	
+	</div>
+	<div class="mask-box"></div>
 </div>
+
+<div class="about-video">
+	<video class="full-video" autoplay loop muted>
+		<source style="width: 100%;height: 100vh;" src="/blog/">
+	</video>
+	<div class="video-header-title">
+		about
+	</div>
+	<div class="video-header-desc">
+	
+		<span class="title" id="video-header-desc"></span>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+			<script>
+			var typed = new Typed("#video-header-desc", {
+				strings: ['愿你如风，被人温柔以待'],
+				startDelay: 100,
+				typeSpeed: 100,
+				loop: true,
+				backSpeed: 50,
+				showCursor: true
+			});
+			</script>
+		
+	</div>
+	<div class="mask-box"></div>
+</div>
+
 <div id="about" class="container">
 	<div class="title">
 		<i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;关于
@@ -474,44 +649,38 @@ background-position: center center;">
 		<div class="skill">
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); width: 70%">
-					<span class="bar-name">HTML5</span>
-				</div>
+				<span class="bar-name">HTML5</span>
+				<div class="bar" style="background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); width: 70%"></div>
 				<span class="bar-number">70%</span>
 			</div>
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); width: 85%">
-					<span class="bar-name">JavaScript</span>
-				</div>
+				<span class="bar-name">JavaScript</span>
+				<div class="bar" style="background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); width: 85%"></div>
 				<span class="bar-number">85%</span>
 			</div>
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); width: 20%">
-					<span class="bar-name">Vue</span>
-				</div>
-				<span class="bar-number">20%</span>
+				<span class="bar-name">Vue</span>
+				<div class="bar" style="background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); width: 50%"></div>
+				<span class="bar-number">50%</span>
 			</div>
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); width: 70%">
-					<span class="bar-name">CSS</span>
-				</div>
+				<span class="bar-name">CSS</span>
+				<div class="bar" style="background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); width: 70%"></div>
 				<span class="bar-number">70%</span>
 			</div>
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient( 135deg, #97ABFF 10%, #123597 100%); width: 70%">
-					<span class="bar-name">jquery</span>
-				</div>
+				<span class="bar-name">jquery</span>
+				<div class="bar" style="background: linear-gradient( 135deg, #97ABFF 10%, #123597 100%); width: 70%"></div>
 				<span class="bar-number">70%</span>
 			</div>
 			
 			<div class="bar-box">
-				<div class="bar" style="background: linear-gradient(to top, #00c6fb 0%, #005bea 100%); width: 75%">
-					<span class="bar-name">H5</span>
-				</div>
+				<span class="bar-name">H5</span>
+				<div class="bar" style="background: linear-gradient(to top, #00c6fb 0%, #005bea 100%); width: 75%"></div>
 				<span class="bar-number">75%</span>
 			</div>
 			
@@ -612,55 +781,113 @@ background-position: center center;">
 	
 </div>
     </main>
+
+    <!-- 页脚 -->
     <div class="footer bg-color">
   <div class="footer-main">
     <div class="link">
-      <a href="https://github.com/yecao2829791242">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <!-- <a href="https://mail.qq.com">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a> -->
-      <a href="tencent://AddContact/?fromId=adminzjzh&fromSubId=1&subcmd=all&uin=2829791242">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
+      
+        
+          <a href="mailto:2829791242@qq.com" class="social">
+            
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            
+          </a>
+        
+      
+        
+          <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=2829791242" class="social">
+            
+              <i class="fa fa-qq" aria-hidden="true"></i>
+            
+          </a>
+        
+      
     </div>
     <div class="footer-copyright">
-      Copyright © 2020 - 2021 <a href="https://github.com/yecao2829791242">yecao</a>
+      <p>Copyright © 2020 - 2021</p>
+
     </div>
+    <div class="footer-custom">
+      
+    </div>
+    <!-- 不蒜子统计 -->
     
-    
-<!-- 不蒜子统计 -->
-<span id="busuanzi_container_site_pv">
-      <i class="fa fa-book" aria-hidden="true"></i>本站总阅读量：<span id="busuanzi_value_page_pv"></span>
-      次
-</span>
-<span id="busuanzi_container_site_pv">
-      <i class="fa fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span>
-      次
-</span>
-<span class="post-meta-divider">|</span>
-<span id="busuanzi_container_site_uv" style='display:none'>
-      <i class="fa fa-users" aria-hidden="true"></i>本站访客数：<span
-            id="busuanzi_value_site_uv"></span> 人
-</span>
-<!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <!-- 不蒜子统计 -->
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-book" aria-hidden="true"></i>本站总阅读量：<span id="busuanzi_value_page_pv"></span> 次
+  </span>
+  <span id="busuanzi_container_site_pv">
+        <i class="fa fa-eye" aria-hidden="true"></i>本站总访问量：<span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  <span class="post-meta-divider">|</span>
+  <span id="busuanzi_container_site_uv" style='display:none'>
+        <i class="fa fa-users" aria-hidden="true"></i>本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+  </span>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
     
   </div>
 </div>
 
+
+    <!-- 渲染暗黑按钮 -->
+    
+      <div class="dark">
+  <div class="dark-content">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <!-- <span>关灯</span> -->
+  </div>
+  
+</div>
+
+<script>
+  $(function() {
+    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('false');
+    if (isDark) {
+      $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+    }
+    $('.dark').click(function() {
+      if ($(document.body).is('.darkModel')) {
+        $(document.body).removeClass('darkModel');
+        localStorage.setItem('dark', false);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      } else {
+        $(document.body).addClass('darkModel');
+        localStorage.setItem('dark', true);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      }
+    })
+  })
+</script>
+    
+    <!-- 渲染回到顶部按钮 -->
     
       <div class="goTop top-btn-color border-color">
   <i class="fa fa-arrow-up" aria-hidden="true"></i>
 </div>
 <script src="/blog/js/goTop.js"></script>
     
-
+    <!-- 渲染左下角音乐播放器 -->
     
       <link rel="stylesheet" href="/blog/js/aplayer/APlayer@1.10.1.min.css">
 <style>
@@ -696,7 +923,7 @@ background-position: center center;">
   class=""
   server="netease"
   type="playlist"
-  id="723417139"
+  id="4859254405"
   fixed='true'
   autoplay='false'
   theme='#42b983'
@@ -723,16 +950,17 @@ background-position: center center;">
     
       <script src="/blog/js/fancybox/jquery.fancybox.min.js"></script>
     
-
-    <script src="/blog/js/wrapImage.js"></script>
     
+    <!-- 鼠标点击特效 -->
     <!-- 爱心点击 -->
-    
-      
-        <script src="/blog/js/cursor/fireworks.js"></script>
-      
-    
 
+	
+		<script src="/blog/js/cursor/fireworks.js"></script>
+	
+
+
+
+    <!-- 百度解析 -->
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
@@ -752,132 +980,140 @@ background-position: center center;">
 </script>
 
     
+    <!-- 背景彩带 -->
     <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/blog/js/ribbon.min.js"></script>
     
-      <script src="/blog/js/aos/aos.js"></script>
-      <script>
-        // https://github.com/michalsnik/aos
-        const themeOffset = parseInt('120') || 120;
-        const themeDelay = parseInt('0')|| 0;
-        const themeDuration = parseInt('400') || 400;
-        const themeEasing = 'ease' || 'ease';
-        const themeOnce = eval('true') || false;
-        const themeMirror = eval('false') || false;
-        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
-        AOS.init({
-          // Global settings:
-          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-          initClassName: 'aos-init', // class applied after initialization
-          animatedClassName: 'aos-animate', // class applied on animation
-          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-          offset: themeOffset, // offset (in px) from the original trigger point
-          delay: themeDelay, // values from 0 to 3000, with step 50ms
-          duration: themeDuration, // values from 0 to 3000, with step 50ms
-          easing: themeEasing, // default easing for AOS animations
-          once: themeOnce, // whether animation should happen only once - while scrolling down
-          mirror: themeMirror, // whether elements should animate out while scrolling past them
-          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
-
-        });
-      </script>
+    <!-- div滚动到显示区域的动画 -->
     
+  <script src="/blog/js/aos/aos.js"></script>
+  <script>
+    // https://github.com/michalsnik/aos
+    const themeOffset = parseInt('120') || 120;
+    const themeDelay = parseInt('0') || 0;
+    const themeDuration = parseInt('400') || 400;
+    const themeEasing = 'ease' || 'ease';
+    const themeOnce = eval('true') || false;
+    const themeMirror = eval('false') || false;
+    const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: themeOffset, // offset (in px) from the original trigger point
+      delay: themeDelay, // values from 0 to 3000, with step 50ms
+      duration: themeDuration, // values from 0 to 3000, with step 50ms
+      easing: themeEasing, // default easing for AOS animations
+      once: themeOnce, // whether animation should happen only once - while scrolling down
+      mirror: themeMirror, // whether elements should animate out while scrolling past them
+      anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
 
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
-<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
-<div id="appCopy">
-</div>
-<script>
-  var vm = new Vue({
-    el: '#appCopy',
-    data: {
-    },
-    computed: {
-    },
-    mounted() {
-      const that = this;
-      //  监听 ctrl + c事件  
-      $(document).unbind('keypress').bind('keypress', function (e) {
-        if (e.ctrlKey && e.keyCode == 67) {
-          doSomething();
-          // 返回false, 防止重复触发copy事件  
-          return false;
-        }
-      })
-
-      // 鼠标右键的复制事件  
-      $(document).unbind('copy').bind('copy', function (e) {
-        doSomething();
-        // console.log('右键复制 监听成功');
-      });
-
-      function doSomething() {
-        that.$notify({
-          title: "成功",
-          content: "已复制",
-          type: 'success'
+    <!-- 复制提示 -->
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+  <script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+  <div id="appCopy">
+  </div>
+  <script>
+    var vm = new Vue({
+      el: '#appCopy',
+      data: {
+      },
+      computed: {
+      },
+      mounted() {
+        const that = this;
+        //  监听 ctrl + c事件  
+        $(document).unbind('keypress').bind('keypress', function (e) {
+          if (e.ctrlKey && e.keyCode == 67) {
+            doSomething();
+            // 返回false, 防止重复触发copy事件  
+            return false;
+          }
         })
-        // console.log('ctrl + c 监听成功');  
-      }
-    },
-    methods: {
-    },
-    created() { }
-  })
-</script>
-    
+
+        // 鼠标右键的复制事件  
+        $(document).unbind('copy').bind('copy', function (e) {
+          doSomething();
+          // console.log('右键复制 监听成功');
+        });
+
+        function doSomething() {
+          that.$notify({
+            title: "成功",
+            content: "复制成功了哦",
+            type: 'success'
+          })
+          // console.log('ctrl + c 监听成功');  
+        }
+      },
+      methods: {
+      },
+      created() { }
+    })
+  </script>
+
 
     <!-- 输入框打字特效 -->
-    
-      <script src="/blog/js/activate-power-mode.js"></script>
-      <script>
-          POWERMODE.colorful = true;  // 打开随机颜色特效
-          POWERMODE.shake = false;    // 关闭输入框抖动
-          document.body.addEventListener('input', POWERMODE);//监听打字事件
-      </script>
-    
+    <!-- 输入框打字特效 -->
+
+  <script src="/blog/js/activate-power-mode.js"></script>
+  <script>
+    POWERMODE.colorful = true;  // 打开随机颜色特效
+    POWERMODE.shake = false;    // 关闭输入框抖动
+    document.body.addEventListener('input', POWERMODE);//监听打字事件
+  </script>
+
 
     <!-- markdown代码一键复制功能 -->
-    <script src="/blog/js/clipboard/clipboard.min.js"></script>
-    <script>
-      !function (e, t, a) {
-        var copy = '复制';
-        /* code */
-        var initCopyCode = function(){
-          var copyHtml = '';
-          copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
-          copyHtml += '<i class="fa fa-copy"></i><span>' + copy + '</span>';
-          copyHtml += '</button>';
-          $(".post-detail pre").not('.gutter pre').wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
-          $(".post-detail pre").not('.gutter pre').before(copyHtml);
-          new ClipboardJS('.btn-copy', {
-              target: function(trigger) {
-                  return trigger.nextElementSibling;
-              }
-          });
+    <!-- markdown代码一键复制功能 -->
+<script src="/blog/js/clipboard/clipboard.min.js"></script>
+<script>
+  !function (e, t, a) {
+    var copy = '复制';
+    /* code */
+    var initCopyCode = function () {
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
+      copyHtml += '<i class="fa fa-copy"></i><span>' + copy + '</span>';
+      copyHtml += '</button>';
+      $(".post-detail pre").not('.gutter pre').wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
+      $(".post-detail pre").not('.gutter pre').before(copyHtml);
+      new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+          return trigger.nextElementSibling;
         }
-        initCopyCode();
-      }(window, document);
-    </script>
-
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+    
+    <!-- 图片懒加载 -->
     <script src="/blog/js/lazyload/lazyload@1.9.1.js"></script>
-    <script>
-      $(function() {
-        $("div.lazyload, img.lazyload, a.lazyload").lazyload(
-            {
-                effect: "fadeIn",
-                placeholder: "https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif"    //图片未加载出来时显示的占位图
-            }
-        );
-    });
-    </script>
+<script>
+  $(function () {
+    $("div.lazyload, img.lazyload, a.lazyload").lazyload(
+      {
+        effect: "fadeIn",
+        placeholder: "https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif"    //图片未加载出来时显示的占位图
+      }
+    );
+  });
+</script>
     
     <script src="/blog/js/app.js"></script>
+
   </body>
 </html>

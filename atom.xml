@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yecao</title>
+  
+  <subtitle>每天更进一步</subtitle>
+  <link href="https://gitee.com/zjzh_yecao/blog.git/atom.xml" rel="self"/>
+  
+  <link href="https://gitee.com/zjzh_yecao/blog.git/"/>
+  <updated>2021-07-09T16:38:05.387Z</updated>
+  <id>https://gitee.com/zjzh_yecao/blog.git/</id>
+  
+  <author>
+    <name>yecao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javaScript中的面向对象ES6(重点)</title>
+    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/03/09/javascript-zhong-de-mian-xiang-dui-xiang-es6-chong-dian/"/>
+    <id>https://gitee.com/zjzh_yecao/blog.git/2021/03/09/javascript-zhong-de-mian-xiang-dui-xiang-es6-chong-dian/</id>
+    <published>2021-03-09T14:16:00.000Z</published>
+    <updated>2021-07-09T16:38:05.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;javascript中的面向对象概念es6&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#javascript中的面向对象概念es6&quot;&gt;&lt;/a&gt; javaScript中的面向对象概念(ES6)&lt;/h2&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    
+    
+    <category term="jsvaScript" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/jsvaScript/"/>
+    
+  </entry>
+  
+</feed>
