@@ -3,11 +3,11 @@
   <title>yecao</title>
   
   <subtitle>每天更进一步</subtitle>
-  <link href="https://gitee.com/zjzh_yecao/blog.git/atom.xml" rel="self"/>
+  <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/atom.xml" rel="self"/>
   
-  <link href="https://gitee.com/zjzh_yecao/blog.git/"/>
+  <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/"/>
   <updated>2021-07-10T11:15:51.568Z</updated>
-  <id>https://gitee.com/zjzh_yecao/blog.git/</id>
+  <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/</id>
   
   <author>
     <name>yecao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>函数</title>
-    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/07/10/function/"/>
-    <id>https://gitee.com/zjzh_yecao/blog.git/2021/07/10/function/</id>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/function/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/function/</id>
     <published>2021-07-10T08:45:54.000Z</published>
     <updated>2021-07-10T11:15:51.568Z</updated>
     
@@ -28,19 +28,19 @@
     
     
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/categories/js/"/>
     
     
-    <category term="前端" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>es5新增方法</title>
-    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/07/10/newadd/"/>
-    <id>https://gitee.com/zjzh_yecao/blog.git/2021/07/10/newadd/</id>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/newadd/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/newadd/</id>
     <published>2021-07-10T08:09:42.000Z</published>
     <updated>2021-07-10T09:53:24.679Z</updated>
     
@@ -49,19 +49,19 @@
     
     
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/categories/js/"/>
     
     
-    <category term="前端" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>原型继承</title>
-    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/07/10/inherit/"/>
-    <id>https://gitee.com/zjzh_yecao/blog.git/2021/07/10/inherit/</id>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/inherit/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/inherit/</id>
     <published>2021-07-10T07:37:00.000Z</published>
     <updated>2021-07-10T09:53:30.595Z</updated>
     
@@ -70,19 +70,19 @@
     
     
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/categories/js/"/>
     
     
-    <category term="前端" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>js的原型、构造函数、原型链</title>
-    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/07/10/prototype/"/>
-    <id>https://gitee.com/zjzh_yecao/blog.git/2021/07/10/prototype/</id>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/prototype/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/07/10/prototype/</id>
     <published>2021-07-10T05:50:00.000Z</published>
     <updated>2021-07-10T09:53:36.288Z</updated>
     
@@ -91,19 +91,19 @@
     
     
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/categories/js/"/>
     
     
-    <category term="前端" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>javaScript中的面向对象ES6</title>
-    <link href="https://gitee.com/zjzh_yecao/blog.git/2021/03/09/jsfile/"/>
-    <id>https://gitee.com/zjzh_yecao/blog.git/2021/03/09/jsfile/</id>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/03/09/jsfile/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecoa.git/2021/03/09/jsfile/</id>
     <published>2021-03-09T14:16:00.000Z</published>
     <updated>2021-07-10T09:53:42.157Z</updated>
     
@@ -112,12 +112,12 @@
     
     
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/categories/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/categories/js/"/>
     
     
-    <category term="前端" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-    <category term="js" scheme="https://gitee.com/zjzh_yecao/blog.git/tags/js/"/>
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecoa.git/tags/js/"/>
     
   </entry>
   
