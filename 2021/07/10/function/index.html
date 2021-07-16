@@ -634,22 +634,19 @@
       </div>
       <div class="post-content">
         <h1 class="bamboo-h " id="函数">函数</h1><br/>
-<h2 id="函数的定义和调用"><a class="markdownIt-Anchor" href="#函数的定义和调用"></a> 函数的定义和调用</h2>
-<h3 id="函数的定义方式"><a class="markdownIt-Anchor" href="#函数的定义方式"></a> 函数的定义方式</h3>
-<ul>
+<h2 id="函数的定义和调用"><a href="#函数的定义和调用" class="headerlink" title="函数的定义和调用"></a>函数的定义和调用</h2><h3 id="函数的定义方式"><a href="#函数的定义方式" class="headerlink" title="函数的定义方式"></a>函数的定义方式</h3><ul>
 <li>函数声明方式function关键字(命名函数)</li>
 <li>函数表达式(匿名函数)</li>
 <li>new Function()</li>
 </ul>
-<p><code>var fn = new Function('参数1','参数2',......,'函数体')</code></p>
+<p><code>    var fn = new Function(&#39;参数1&#39;,&#39;参数2&#39;,......,&#39;函数体&#39;)</code></p>
 <ul>
 <li>Function里面参数都必须是字符串格式</li>
 <li>第三种方式执行效率低，也不方便书写，因此较少使用</li>
 <li>第三种方式执行效率低，也不方便书写，因此较少使用</li>
 <li>函数也属于对象</li>
 </ul>
-<h3 id="函数的调用方式"><a class="markdownIt-Anchor" href="#函数的调用方式"></a> 函数的调用方式</h3>
-<ol>
+<h3 id="函数的调用方式"><a href="#函数的调用方式" class="headerlink" title="函数的调用方式"></a>函数的调用方式</h3><ol>
 <li>普通函数</li>
 <li>对象的方法</li>
 <li>构造函数</li>
@@ -657,65 +654,61 @@
 <li>定时器函数</li>
 <li>立即执行函数</li>
 </ol>
-<h3 id="函数内的this指向"><a class="markdownIt-Anchor" href="#函数内的this指向"></a> 函数内的this指向</h3>
-<blockquote>
+<h3 id="函数内的this指向"><a href="#函数内的this指向" class="headerlink" title="函数内的this指向"></a>函数内的this指向</h3><blockquote>
 <p>这些this的指向，是当我们调用函数的时候确定的。调用方式的不同决定了this的指向不同this一般指向我们的调用者。</p>
 </blockquote>
 <table>
 <thead>
 <tr>
 <th>调用方式</th>
-<th style="text-align:center">this指向</th>
+<th align="center">this指向</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>普通函数第调用</td>
-<td style="text-align:center">window</td>
+<td align="center">window</td>
 </tr>
 <tr>
 <td>构造函数调用</td>
-<td style="text-align:center">实例对象 原型对象里面的方法也指向实例对象</td>
+<td align="center">实例对象 原型对象里面的方法也指向实例对象</td>
 </tr>
 <tr>
 <td>对象方法斯调用用</td>
-<td style="text-align:center">该方法所属对象</td>
+<td align="center">该方法所属对象</td>
 </tr>
 <tr>
 <td>事件绑定方法</td>
-<td style="text-align:center">绑定事件对象</td>
+<td align="center">绑定事件对象</td>
 </tr>
 <tr>
 <td>定时器函数</td>
-<td style="text-align:center">window</td>
+<td align="center">window</td>
 </tr>
 <tr>
 <td>立即执行函数</td>
-<td style="text-align:center">window</td>
+<td align="center">window</td>
 </tr>
-</tbody>
-</table>
-<h3 id="改变函数内部的this指向"><a class="markdownIt-Anchor" href="#改变函数内部的this指向"></a> 改变函数内部的this指向</h3>
-<blockquote>
+</tbody></table>
+<h3 id="改变函数内部的this指向"><a href="#改变函数内部的this指向" class="headerlink" title="改变函数内部的this指向"></a>改变函数内部的this指向</h3><blockquote>
 <p>javascript为我们提供了一些函数方法来帮我们更优雅的处理函数内部this指向的问题，常用的有bind() call() apply()三种方法。</p>
 </blockquote>
 <ol>
-<li>call()方法</li>
-</ol>
-<blockquote>
+<li>call()方法<blockquote>
 <p>call方法可以用来调用函数、改变函数内部的this指向、向函数传递参数。</p>
 </blockquote>
-<p><code>fun.call(thisArg,a,b)</code></p>
+</li>
+</ol>
+<p> <code> fun.call(thisArg,a,b) </code></p>
 <ul>
 <li>thisArg：在函数运行时指定的this值</li>
 <li>a,b：传递的参数值</li>
 </ul>
 <ol start="2">
-<li>apply()方法</li>
-</ol>
-<blockquote>
+<li>apply()方法<blockquote>
 <p>apply()方法调用一个函数，简单理解为调用函数的方式，但是他可以改变函数的this指向。</p>
 </blockquote>
+</li>
+</ol>
 <p><code>fun.apply(thisArg,[arr])</code></p>
 <p>示例代码:</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//apply()方法改变函数的this指向</span>
@@ -759,8 +752,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">&#125;</span>
 <span class="token keyword">var</span> f<span class="token operator">=</span><span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//不会调用原函数</span>
 <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="高阶函数"><a class="markdownIt-Anchor" href="#高阶函数"></a> 高阶函数</h3>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     c <span class="token operator">&amp;&amp;</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
 <span class="token keyword">function</span> <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -770,16 +762,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>函数也是一种数据类型，同样可以作为参数，传递给另外一个参数使用，最典型的就是作为回调函数。</p>
 </blockquote>
 <pre><code>function fn() &#123;
-	return function() &#123;&#125;
+    return function() &#123;&#125;
 &#125;
 fn();
 </code></pre>
 <blockquote>
 <p>此时fn就是一个高阶函数。</p>
 </blockquote>
-<h3 id="闭包"><a class="markdownIt-Anchor" href="#闭包"></a> 闭包</h3>
-<h4 id="变量作用域"><a class="markdownIt-Anchor" href="#变量作用域"></a> 变量作用域</h4>
-<blockquote>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><h4 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h4><blockquote>
 <p>变量根据作用域不同分为两种：全局变量和局部变量。</p>
 </blockquote>
 <ol>
@@ -787,8 +777,7 @@ fn();
 <li>函数外部不可以使用局部变量</li>
 <li>当函数执行完毕，本作用域内的局部变量会销毁</li>
 </ol>
-<h4 id="什么是闭包"><a class="markdownIt-Anchor" href="#什么是闭包"></a> 什么是闭包</h4>
-<blockquote>
+<h4 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h4><blockquote>
 <span class='p red'>闭包指有权访问另一个函数作用域中的变量的函数，简单理解就是，一个作用域可以访问另一个函数内部的局部变量。</span>
 </blockquote>
 <p>闭包的作用: <span class='p red'>延伸了变量的作用范围。</span></p>
@@ -873,10 +862,8 @@ fn();
 	<span class="token keyword">let</span> wal<span class="token operator">=</span>car<span class="token punctuation">.</span><span class="token function">wall</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>wal<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="递归"><a class="markdownIt-Anchor" href="#递归"></a> 递归</h3>
-<blockquote>
-<p>如果一个函数在内部可以调用其本身，那么这个函数就是递归函数。简单理解：函数内部自己调用自己这个函数就是递归函数，递归函数的作用和循环效果一样。<br />
-由于递归很容易发生&quot;栈溢出&quot;错误，所以必须要加退出条件 return。</p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><blockquote>
+<p> 如果一个函数在内部可以调用其本身，那么这个函数就是递归函数。简单理解：函数内部自己调用自己这个函数就是递归函数，递归函数的作用和循环效果一样。<br>由于递归很容易发生”栈溢出”错误，所以必须要加退出条件 return。</p>
 </blockquote>
 <p>代码示例:</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//递归案例求1~n的阶乘</span>
@@ -893,7 +880,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token number">3</span><span class="token operator">*</span><span class="token number">1</span>
 <span class="token number">3</span><span class="token operator">*</span><span class="token number">2</span>
 <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>代码示例2:</p>
+
+
+<p>代码示例2: </p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//利用递归求斐波那契数列 1,1,2,3,5,8,13,21......</span>
 <span class="token comment">//用户输入一个数字n就可以求出这个数字对应的数列值。</span>
 <span class="token keyword">function</span> <span class="token function">series</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -904,6 +893,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">&#125;</span>
 <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token function">series</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 <p>代码示例3:</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 利用递归遍历数据</span>
 <span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
@@ -940,8 +931,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">&#125;</span>
 <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token function">getdata</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="浅拷贝和深拷贝"><a class="markdownIt-Anchor" href="#浅拷贝和深拷贝"></a> 浅拷贝和深拷贝</h3>
-<ol>
+<h3 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h3><ol>
 <li>浅拷贝：浅拷贝只是拷贝一层，更深层次对象级别的只拷贝引用。</li>
 <li>浅拷贝在拷贝复杂类型的时候拷贝的是复杂类型的地址，如果修改了拷贝过来的对象或者是数组的里面的数据那么原拷贝对象里面的数据也会被修改。</li>
 <li>深拷贝：深拷贝拷贝多层，每一层的数据都会拷贝。</li>
@@ -967,6 +957,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
 Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
 o<span class="token punctuation">.</span>msg<span class="token operator">=</span><span class="token string">'女'</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 <p>代码实例2:</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//递归实现深拷贝</span>
 <span class="token keyword">var</span> obj<span class="token operator">=</span><span class="token punctuation">&#123;</span>
@@ -1034,9 +1026,9 @@ console<span class="token punctuation">.</span><span class="token function">log<
       
       <!-- <div class="content">
         正则表达式
- 什么是正则表达式
 
-正则表达式是用于匹配字符串中字符组合模式。在javascript中，正则表达式也是对象
+什么是正则表达式
+正则表达式是用于匹配字符串中字符组合模式。在javascript中，正则表达式也是对象。
       </div> -->
     </a>
   </div>
@@ -1055,8 +1047,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
       </div>
       <!-- <div class="content">
         ES5中新增方法
-迭代遍历方法：forEach() map() filter() some() every()
-1.ar
+迭代遍历方法：forEach() map() filter() some() every()1.arr
       </div> -->
     </a>
   </div>

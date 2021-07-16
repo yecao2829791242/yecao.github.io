@@ -634,14 +634,11 @@
       </div>
       <div class="post-content">
         <h1 class="bamboo-h " id="继承">继承</h1><br/>
-<h2 id="继承的含义"><a class="markdownIt-Anchor" href="#继承的含义"></a> 继承的含义:</h2>
-<blockquote>
+<h2 id="继承的含义"><a href="#继承的含义" class="headerlink" title="继承的含义:"></a>继承的含义:</h2><blockquote>
 <p>继承是面向对象编程中的一个重要概念，通过继承可以使子类的实例使用在父类中定义的属性和方法。</p>
 </blockquote>
-<h3 id="在js中是如何实现继承的呢"><a class="markdownIt-Anchor" href="#在js中是如何实现继承的呢"></a> 在js中是如何实现继承的呢？</h3>
-<p>由于本人技术有限目前只知道两种继承(组合继承，和es6的继承)</p>
-<h3 id="组合继承"><a class="markdownIt-Anchor" href="#组合继承"></a> 组合继承</h3>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 父构造函数</span>
+<h3 id="在js中是如何实现继承的呢？"><a href="#在js中是如何实现继承的呢？" class="headerlink" title="在js中是如何实现继承的呢？"></a>在js中是如何实现继承的呢？</h3><p> 由于本人技术有限目前只知道两种继承(组合继承，和es6的继承)</p>
+<h3 id="组合继承"><a href="#组合继承" class="headerlink" title="组合继承"></a>组合继承</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 父构造函数</span>
 			<span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 				<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
 				<span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
@@ -664,8 +661,7 @@
 			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Jc</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
 			ldh<span class="token punctuation">.</span><span class="token function">sing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这种继承方式有个缺点就是在继承父类函数的时候调用了父类构造函数，导致子类的原型上多了不需要的父类属性，存在内存上的浪费。</p>
-<h3 id="利用class"><a class="markdownIt-Anchor" href="#利用class"></a> 利用class</h3>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Numbear</span> <span class="token punctuation">&#123;</span>
+<h3 id="利用class"><a href="#利用class" class="headerlink" title="利用class"></a>利用class</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Numbear</span> <span class="token punctuation">&#123;</span>
 			<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 				<span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
 				<span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
@@ -729,8 +725,7 @@
       
       <!-- <div class="content">
         ES5中新增方法
-迭代遍历方法：forEach() map() filter() some() every()
-1.ar
+迭代遍历方法：forEach() map() filter() some() every()1.arr
       </div> -->
     </a>
   </div>
