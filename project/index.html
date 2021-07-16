@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>javaScript中的面向对象ES6 | yecao</title>
+  <title>项目和案例 | yecao</title>
 
   
     
@@ -575,14 +575,14 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/180212/40/14210/1764997/60f13364E7a06bdd6/78c11d237ce42c3b.png" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/80099/1/16410/2751521/60f13be9E35568033/e975106521fe2273.png" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="title-box">
     <span class="title">
-      javaScript中的面向对象ES6
+      项目和案例
     </span>
   </div>
   
@@ -599,7 +599,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-03-09</span>
+        <span class="post-time">2021-07-16</span>
       </div>
       
       <div class="post-tags-categories">
@@ -607,16 +607,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E5%89%8D%E7%AB%AF/" class="">
-              前端
-            </a>
-          
-            <a href="/tags/js/" class="">
-              js
-            </a>
-          
-            <a href="/tags/%E7%AC%94%E8%AE%B0/" class="">
-              笔记
+            <a href="/" class="">
+              
             </a>
           
         </div>
@@ -625,131 +617,37 @@
         <div class="categories">
           <i class="iconfont iconbookmark1"></i>
           
-            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="">
-              前端
-            </a>
-          
-            <a href="/categories/%E5%89%8D%E7%AB%AF/js/" class="">
-              js
-            </a>
-          
-            <a href="/categories/%E5%89%8D%E7%AB%AF/js/%E7%AC%94%E8%AE%B0/" class="">
-              笔记
+            <a href="/" class="">
+              
             </a>
           
         </div>
         
       </div>
       <div class="post-content">
-        <h1 class="bamboo-h " id="javaScript中的面向对象概念(ES6)">javaScript中的面向对象概念(ES6)</h1><br/>
+        <h1 class="bamboo-h " id="项目和案例">项目和案例</h1><br/>
 
-<h2 id="1-什么是对象？"><a href="#1-什么是对象？" class="headerlink" title="1. 什么是对象？"></a>1. 什么是对象？</h2><p>​        1. 现实生活中:万物皆对象，对象是一个具体的事物，看的见摸得着的实物。例如，一本书、一辆汽车、一个人可以是”对象”，一个数据库、一张网页、一个与远程服务器的连接也可以是”对象”(千万别理解成那个对象)。</p>
-<p>​        2. 在javaScript中,对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。</p>
-<p>​        3. 面向对象更贴近我们的实际生活，可以使用面向对象来描述现实事物，但是事物分为具体的事物和抽象的事物。</p>
-<p>比如:手机    抽想的(泛指的)  具体的(特指的)</p>
-<p>​        4. 对象是由属性和方法组成的。</p>
-<ul>
-<li>属性：事物的特征，在对象中用属性来表示(常用名词)</li>
-<li>方法：事物的行为，在对象中用方法来表示(常用动词)</li>
-</ul>
-<h3 id="2-面向对象的思维特点"><a href="#2-面向对象的思维特点" class="headerlink" title="2. 面向对象的思维特点"></a>2. 面向对象的思维特点</h3><p>​    1. 抽取(抽象)对象共用的属性和行为组织(封装)成一个类(模板)。</p>
-<p>​    2. 对类进行实例化，获取类的对象。</p>
-<p>​    3. 面向对象编程我们考虑的是有哪些对象，按照面向对象的思维特点不断的创建对象，使用对象，指挥对象做事情。</p>
-<h3 id="3-类-class"><a href="#3-类-class" class="headerlink" title="3. 类 class"></a>3. 类 class</h3><blockquote>
-<p>在ES6中新增加类的概念，可以使用关键字声明一个类，之后这个类来实例化对象。</p>
-<p>类抽象了对象的公共部分，它泛指某一大类。比如:手机 苹果</p>
-<p>例子：对象特指某一个，通过类实例化一个具体的对象。比如我正在吃苹果。</p>
-</blockquote>
-<h3 id="4-创建类"><a href="#4-创建类" class="headerlink" title="4. 创建类"></a>4. 创建类</h3><p>​    语法：class 类名{//代码内容}</p>
-<p>​    <code> var xx = new Uname</code></p>
-<p>​    <em>注意：类必须new来实例化对象</em></p>
-<h3 id="5-constructor构造函数"><a href="#5-constructor构造函数" class="headerlink" title="5. constructor构造函数"></a>5. constructor构造函数</h3><blockquote>
-<p> constructor()方法是类的构造函数(默认方法)，用于传递参数，返回实例对象,通过new命令生成对象实例时，自动调用该方法，如果没有显示定义，类的内部会自动给我们创建一个constructor()</p>
-</blockquote>
-<p>​    实例:</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Start</span> <span class="token punctuation">&#123;</span>
-	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">uname<span class="token punctuation">,</span> age<span class="token punctuation">,</span> starger</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> uname<span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
-		<span class="token keyword">this</span><span class="token punctuation">.</span>starger <span class="token operator">=</span> starger<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token function">sing</span><span class="token punctuation">(</span><span class="token parameter">g</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> g<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">let</span> zs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Start</span><span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">let</span> ls <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Start</span><span class="token punctuation">(</span><span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">48</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>zs<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	zs<span class="token punctuation">.</span><span class="token function">sing</span><span class="token punctuation">(</span><span class="token string">'哈哈'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	ls<span class="token punctuation">.</span><span class="token function">sing</span><span class="token punctuation">(</span><span class="token string">'嘿嘿'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>运行结果：张三哈哈    李四嘿嘿</p>
-</blockquote>
-<p>注意点:</p>
-<ol>
-<li><p>通过class关键字创建类，类名我们还是习惯性首字母定义成大写。</p>
-</li>
-<li><p>类里面有个constructor 函数，可以接受传递过来的参数，同时    返回实例对象。</p>
-</li>
-<li><p>constructor函数只要 new生成实例时，就会自动调用这个函数， 如果我们不写这个函数，类也会自动生成这个函数。</p>
-</li>
-<li><p>生成 new 不能省略。</p>
-</li>
-<li><p>最后注意语法规范，创建类 类名后面要加小括号，构造函数不需    要加function。</p>
-</li>
-</ol>
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>​    现实中的继承:比如子承父业，比如我们都继承了父亲的姓。</p>
-<blockquote>
-<p>在ES6中实现继承的方式是通过extends关键字</p>
-</blockquote>
-<h3 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h3><p>​    <b style="color:red;">super关键字</b>用于访问和调用对象父类上的函数，可以调用父类的构造函数 也可以调用父类的普通函数。</p>
-<ol>
-<li><p>继承中，如果实例化子类输出一个方法，先看子类有没有这个方法，如果有就执行子类的。</p>
-</li>
-<li><p>继承中，如果子类里面没有，就去查找父类有没有这个方法，如果有，就执行父类这个方法(就近原则)。</p>
-</li>
-<li><p>子类调用父类普通函数的方法super().方法()</p>
-</li>
-</ol>
-<p style="color:red;">注意：子类在构造函数中使用super，必须放到this前面(必须先调用父类的构造方法，在使用子类的构造方法)。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span class='p red'>注意：码云目前正在进行整顿，git pages暂时无法使用，上述链接均是仓库地址。</span></h2><p><a href="https://gitee.com/zjzh_yecao/mall-vuejs.git">移动端电商App地址</a></p>
+<div class="gallery ">
+              <p><img "" class="lazyload placeholder" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/190266/11/13406/2535789/60f1308eE0e21058c/3f2d3d7cef219d5f.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="一个移动端电商App"></p>
+            </div>
 
-<p>代码示例:</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//父类</span>
-	<span class="token keyword">class</span> <span class="token class-name">Numbear</span><span class="token punctuation">&#123;</span>
-		<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-		<span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">var</span> sex <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sex<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token comment">//子类</span>
-	<span class="token keyword">class</span> <span class="token class-name">Num</span> <span class="token keyword">extends</span> <span class="token class-name">Numbear</span> <span class="token punctuation">&#123;</span>
-		<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">super</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-		<span class="token function">result</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">var</span> sex <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">;</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sex<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">var</span> son <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Num</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	son<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	son<span class="token punctuation">.</span><span class="token function">result</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>运行结果：16    4</p>
-</blockquote>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ol>
-<li>在ES6中没有变量提升，所以必须先定义类，才能通过类实例化对象。</li>
-<li>类里面的共有属性和方法一定要加this使用。</li>
-<li>constructor里面的this指向实例对象，方法里面的this指向这个方法的调用者。</li>
-<li>有时候构造函数里面有其他对象但是我们想让他指向创建的这个对象里面的方法此时我们可以声明一个全局变量然后在构造函数里面让this赋值给一个变量通过变量来调用这个方法(变量名.）。</li>
-</ol>
+
+<p><a href="https://gitee.com/zjzh_yecao/shop.git">电商后台管理系统地址</a></p>
+<div class="gallery ">
+              <p><img "" class="lazyload placeholder" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/91022/20/18777/2443627/60f13b23E408f50cf/b89f99a96e30c0eb.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="电商后台管理系统"></p>
+            </div>
+
+
+<p><a href="https://gitee.com/zjzh_yecao/copycat-page.git">仿小米官网地址</a></p>
+<div class="gallery ">
+              <p><img "" class="lazyload placeholder" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/173302/27/18796/1066079/60e933e1Edd0a36ba/245a5bf91b18f14a.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="仿小米官网"></p>
+            </div>
+
+<p><a href="https://gitee.com/zjzh_yecao/visualization.git">数据可视化地址</a></p>
+<div class="gallery ">
+              <p><img "" class="lazyload placeholder" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/188837/18/12508/2202722/60e93478Ecb82ac86/a81bd8c37e9a8a30.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="数据可视化"></p>
+            </div>
 
       </div>
       
@@ -760,7 +658,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/03/09/jsfile/" target="_blank" title="javaScript中的面向对象ES6">https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/03/09/jsfile/</a>
+    <a href="/project/index.html" target="_blank" title="项目和案例">https://gitee.com/zjzh_yecao/zjzh_yecao.git/project/index.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -777,24 +675,6 @@
 <div class="post-nav">
 
 
-
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/175694/39/19858/3190527/60f13c1bE7f7c50bb/25d92b7855c21e75.png" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/07/10/prototype/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>js的原型、构造函数、原型链</div>
-      </div>
-      
-      <!-- <div class="content">
-        构造函数和原型
-javaScript的构造函数中可以添加一些成员，可以再构造函数本身上添加，也可以在构造函数内部的thi
-      </div> -->
-    </a>
-  </div>
 
 
 

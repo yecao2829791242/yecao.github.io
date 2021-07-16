@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>友情链接 | yecao</title>
+  <title>友链 | yecao</title>
 
   
     
@@ -195,26 +195,39 @@
               
                 <a href="/friends" class="drawer-menu-item-link">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  
+                  <span class="name">友链</span>
                 </a>
               
             </li>
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
+                <a href="/message" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                  
+                  <span class="name">留言板</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
                   <span>
                     
                       <i class="fa fa-link"></i>
                     
                     <span class="name">更多</span>
                   </span>
-                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
+                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
                 </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(6)">
+                <ul class="drawer-sub-menu" v-if="isOpen(7)">
                   
                   <li>
-                    <a href="/gallery">
+                    <a href="/project">
                       
                       <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
                       
@@ -228,15 +241,6 @@
                       <i class="fa fa-user-o" style="margin-top: -20px;"></i>
                       
                       <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://baidu.com">
-                      
-                      <i class="fa fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
                     </a>
                   </li>
                   
@@ -373,7 +377,20 @@
               
                 <a href="/friends" class="menu-item-link">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  
+                  <span class="name">友链</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/message" class="menu-item-link">
+                  
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                  
+                  <span class="name">留言板</span>
                 </a>
               
             </li>
@@ -390,7 +407,7 @@
                 <ul class="sub-menu">
                   
                   <li>
-                    <a href="/gallery">
+                    <a href="/project">
                       
                       <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
                       
@@ -404,15 +421,6 @@
                       <i class="fa fa-user-o" style="margin-top: -20px;"></i>
                       
                       <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://baidu.com">
-                      
-                      <i class="fa fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
                     </a>
                   </li>
                   
@@ -545,7 +553,7 @@
 
 <div class="lazyload friends-header" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/180298/13/14462/2828000/60f139f2Ec86e6d6d/00e73f8c54fdbce0.png">
   <div class="friends-header-title">
-    friends
+    我的友链
     </div>
     <div class="friends-header-desc">
     
@@ -571,7 +579,7 @@
 		<source style="width: 100%;height: 100vh;" src="/">
 	</video>
 	<div class="video-header-title">
-		friends
+		我的友链
 	</div>
 	<div class="video-header-desc">
 	

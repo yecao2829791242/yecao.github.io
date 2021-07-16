@@ -6,7 +6,7 @@
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/"/>
-  <updated>2021-07-16T08:52:43.129Z</updated>
+  <updated>2021-07-16T15:55:49.613Z</updated>
   <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MVC和MVVM</title>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/16/pattern/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/16/pattern/</id>
+    <published>2021-07-16T15:39:14.000Z</published>
+    <updated>2021-07-16T15:55:49.613Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;MVC和MVVM的区别&quot;&gt;MVC和MVVM的区别&lt;/h1&gt;&lt;br/&gt;
+
+&lt;h2 id=&quot;MVC&quot;&gt;&lt;a href=&quot;#MVC&quot; class=&quot;headerlink&quot; title=&quot;MVC&quot;&gt;&lt;/a&gt;MVC&lt;/h2&gt;&lt;p&gt;MVC</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="Vue" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Vue/"/>
+    
+    
+    <category term="设计模式" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="Vue" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6</title>

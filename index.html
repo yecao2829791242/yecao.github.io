@@ -195,26 +195,39 @@
               
                 <a href="/friends" class="drawer-menu-item-link">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  
+                  <span class="name">友链</span>
                 </a>
               
             </li>
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
+                <a href="/message" class="drawer-menu-item-link">
+                  
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                  
+                  <span class="name">留言板</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
                   <span>
                     
                       <i class="fa fa-link"></i>
                     
                     <span class="name">更多</span>
                   </span>
-                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
+                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
                 </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(6)">
+                <ul class="drawer-sub-menu" v-if="isOpen(7)">
                   
                   <li>
-                    <a href="/gallery">
+                    <a href="/project">
                       
                       <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
                       
@@ -228,15 +241,6 @@
                       <i class="fa fa-user-o" style="margin-top: -20px;"></i>
                       
                       <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://baidu.com">
-                      
-                      <i class="fa fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
                     </a>
                   </li>
                   
@@ -373,7 +377,20 @@
               
                 <a href="/friends" class="menu-item-link">
                   
-                  <span class="name">友情链接</span>
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  
+                  <span class="name">友链</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/message" class="menu-item-link">
+                  
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                  
+                  <span class="name">留言板</span>
                 </a>
               
             </li>
@@ -390,7 +407,7 @@
                 <ul class="sub-menu">
                   
                   <li>
-                    <a href="/gallery">
+                    <a href="/project">
                       
                       <i class="fa fa-file-code-o" style="margin-top: -20px;"></i>
                       
@@ -404,15 +421,6 @@
                       <i class="fa fa-user-o" style="margin-top: -20px;"></i>
                       
                       <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="http://baidu.com">
-                      
-                      <i class="fa fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
                     </a>
                   </li>
                   
@@ -590,6 +598,9 @@
             </div>
         </swiper-slide>
       
+      
+        
+        
       
         
         
@@ -1378,6 +1389,8 @@
 			
 		
 			
+		
+			
 				<div class="article-link">
 					
 					<div class="article lazyload" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/179887/7/14541/4381095/60f13c0bE91df1ae3/ba7a522636e8516f.png" style="background-size: cover; 
@@ -1511,6 +1524,66 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="post-time">2021-07-16</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2021/07/16/pattern/">MVC和MVVM</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag">设计模式</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a> <a class="article-category-link" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Vue/">Vue</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            
+              
+              <a href="/2021/07/16/pattern/" class="lazyload" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/91022/20/18777/2443627/60f13b23E408f50cf/b89f99a96e30c0eb.png" style="background-size: cover; 
+                background-position: center center;">
+              </a>
+            
+          </div>
+          <div class="post-content">
+            MVC和MVVM的区别
+
+MVCMVC 全名是 Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范。
+
+Model（模型）：是应用程序中用于处理应用程序
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2021/07/16/pattern/">
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        
+          <a href="/2021/07/16/pattern/" class="lazyload" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/91022/20/18777/2443627/60f13b23E408f50cf/b89f99a96e30c0eb.png" style="background-size: cover; 
+            background-position: center center;">
+          </a>
+        
+      </div>
+    </article>
+  
+    <article class="post" data-aos="fade-up" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
             <span class="post-time">2021-07-12</span>
           </div>
           <div class="post-title">
@@ -1548,7 +1621,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/12/es6/">
-            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1561,7 +1634,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="   ">
+    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1603,7 +1676,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/11/regexp/">
-            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1616,7 +1689,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
+    <article class="post" data-aos="fade-up" style="   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1658,7 +1731,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/10/function/">
-            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1671,7 +1744,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="   ">
+    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1714,7 +1787,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/10/newadd/">
-            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1727,7 +1800,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
+    <article class="post" data-aos="fade-up" style="   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1769,7 +1842,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/10/inherit/">
-            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1782,7 +1855,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="   ">
+    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1825,7 +1898,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/07/10/prototype/">
-            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1838,7 +1911,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
+    <article class="post" data-aos="fade-up" style="   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1880,7 +1953,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/03/09/jsfile/">
-            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
