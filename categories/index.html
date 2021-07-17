@@ -182,17 +182,6 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/about" class="drawer-menu-item-link">
-                  
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                  
-                  <span class="name">关于</span>
-                </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
                 <a href="/friends" class="drawer-menu-item-link">
                   
                     <i class="fa fa-user-plus" aria-hidden="true"></i>
@@ -215,16 +204,16 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(7)">
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
                   <span>
                     
                       <i class="fa fa-link"></i>
                     
                     <span class="name">更多</span>
                   </span>
-                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(7)}" aria-hidden="true"></i>
+                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
                 </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(7)">
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
                   
                   <li>
                     <a href="/project">
@@ -358,17 +347,6 @@
                     <i class="fa fa-bookmark" aria-hidden="true"></i>
                   
                   <span class="name">分类</span>
-                </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="/about" class="menu-item-link">
-                  
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                  
-                  <span class="name">关于</span>
                 </a>
               
             </li>
@@ -618,14 +596,6 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%89%8D%E7%AB%AF/js/" title="js: 7">
-                    <span class="category-content"
-                        title="js" style="background-color: #A3E4D7;">js
-                        <span class="category-length">7</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式: 1">
                     <span class="category-content"
                         title="设计模式" style="background-color: #85C1E9;">设计模式
@@ -634,9 +604,9 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%89%8D%E7%AB%AF/js/%E7%AC%94%E8%AE%B0/" title="笔记: 7">
+                <a href="/categories/%E5%89%8D%E7%AB%AF/js/" title="js: 7">
                     <span class="category-content"
-                        title="笔记" style="background-color: #E8F8F5;">笔记
+                        title="js" style="background-color: #A3E4D7;">js
                         <span class="category-length">7</span>
                     </span>
                 </a>
@@ -646,6 +616,14 @@
                     <span class="category-content"
                         title="Vue" style="background-color: #D5F5E3;">Vue
                         <span class="category-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%89%8D%E7%AB%AF/js/%E7%AC%94%E8%AE%B0/" title="笔记: 7">
+                    <span class="category-content"
+                        title="笔记" style="background-color: #E8F8F5;">笔记
+                        <span class="category-length">7</span>
                     </span>
                 </a>
                 
