@@ -645,34 +645,26 @@
 <p>javaScript的构造函数中可以添加一些成员，可以再构造函数本身上添加，也可以在构造函数内部的this上添加，通过这两种方式添加的成员，就分别称为:</p>
 <ul>
 <li>静态成员：在构造函数本身添加的成员称为静态成员，只能由构造函数本身来访问。</li>
-<li>实例成员：在构造函数内部创建的对象成员称为实例成员，只能由实例化的对象来访问。</li>
-</ul>
-<blockquote>
-<p>真正理解什么是原型是学习原型理论的关键。很多人在此产生了混淆，没有真正理解，自然后续疑惑更多。<br />
-首先，我们明确原型是一个对象，其次，最重要的是，每个函数都有一个属性叫做原型，这个属性指向一个对象。也就是说，原型是函数对象的属性，不是所有对象的属性，对象经过构造函数new出来，那么这个new出来的对象的构造函数有一个属性叫原型。明确这一点很重要。每次你定义一个函数的时候，这个函数的原型属性也就被定义出来了，也就可以使用了，如果不对它进行显示赋值的话，那么它的初始值就是一个空的对象Object。所以，综上我们知道我们讨论原型的时候，都是基于函数的，有了一个函数对象，就有了原型。切记这一点，讨论原型，不能脱离了函数，它是原型真正归属的地方，原型只是函数的一个属性 ！</p>
+<li>实例成员：在构造函数内部创建的对象成员称为实例成员，只能由实例化的对象来访问。<blockquote>
+<p>真正理解什么是原型是学习原型理论的关键。很多人在此产生了混淆，没有真正理解，自然后续疑惑更多。<br>首先，我们明确原型是一个对象，其次，最重要的是，每个函数都有一个属性叫做原型，这个属性指向一个对象。也就是说，原型是函数对象的属性，不是所有对象的属性，对象经过构造函数new出来，那么这个new出来的对象的构造函数有一个属性叫原型。明确这一点很重要。每次你定义一个函数的时候，这个函数的原型属性也就被定义出来了，也就可以使用了，如果不对它进行显示赋值的话，那么它的初始值就是一个空的对象Object。所以，综上我们知道我们讨论原型的时候，都是基于函数的，有了一个函数对象，就有了原型。切记这一点，讨论原型，不能脱离了函数，它是原型真正归属的地方，原型只是函数的一个属性 ！</p>
 </blockquote>
-<h2 id="什么是原型"><a class="markdownIt-Anchor" href="#什么是原型"></a> 什么是原型？</h2>
-<p>在js中任何一个函数都有一个prototype属性，原型(prototype)就是函数的一个属性，它指向一个对象。</p>
-<h3 id="原型就是具有公共属性和方法的对象"><a class="markdownIt-Anchor" href="#原型就是具有公共属性和方法的对象"></a> 原型就是具有公共属性和方法的对象。</h3>
-<p>原型的作用其实就是为类(函数)提供了一个【公共区域】，在这个公共区域中声明的属性和方法能够被所有通过这个类所创建的对象所访问到。减少内存消耗。</p>
+</li>
+</ul>
+<h2 id="什么是原型？"><a href="#什么是原型？" class="headerlink" title="什么是原型？"></a>什么是原型？</h2><p>在js中任何一个函数都有一个prototype属性，原型(prototype)就是函数的一个属性，它指向一个对象。</p>
+<h3 id="原型就是具有公共属性和方法的对象。"><a href="#原型就是具有公共属性和方法的对象。" class="headerlink" title="原型就是具有公共属性和方法的对象。"></a>原型就是具有公共属性和方法的对象。</h3><p>原型的作用其实就是为类(函数)提供了一个【公共区域】，在这个公共区域中声明的属性和方法能够被所有通过这个类所创建的对象所访问到。减少内存消耗。</p>
 <p>· 原型作用之一:数据共享,节省内存空间</p>
 <p>· 原型作用之二:为了实现继承</p>
 <p>原型的优点: 在创建多个对象和方法时这时候这些方法会依次在内存独立开辟空间，为了避免内存浪费我们采用在原型里面定义这些方法，因为原型节省内存并且可以共享这些方法.</p>
-<h3 id="对象原型-proto"><a class="markdownIt-Anchor" href="#对象原型-proto"></a> 对象原型 <strong>proto</strong></h3>
-<p>对象都会有一个属性__proto__指向构造函数的prototype原型对象，之所以我们对象可以使用构造函数prototype原型的对象属性和方法，是因为对象有__proto__原型的存在。</p>
+<h3 id="对象原型-proto"><a href="#对象原型-proto" class="headerlink" title="对象原型 proto"></a>对象原型 <strong>proto</strong></h3><p>对象都会有一个属性__proto__指向构造函数的prototype原型对象，之所以我们对象可以使用构造函数prototype原型的对象属性和方法，是因为对象有__proto__原型的存在。</p>
 <ol>
-<li>
-<p>__proto__对象原型和原型对象prototype是等价的。</p>
+<li><p>__proto__对象原型和原型对象prototype是等价的。</p>
 </li>
-<li>
-<p>__proto__对象原型的意义就在于为对象的查找机制提供了一个方向，或者说一条路线，但它是一个非标准属性因此实际开发中，不可以使用这个属性，它只是内部指向原型对象prototype。</p>
+<li><p>__proto__对象原型的意义就在于为对象的查找机制提供了一个方向，或者说一条路线，但它是一个非标准属性因此实际开发中，不可以使用这个属性，它只是内部指向原型对象prototype。</p>
 </li>
-<li>
-<p>方法的查找规则：首先看对象上是否有方法，如果有就执行这个对象上的方法，如果没有这个方法，那么这时对应的__proto__就会去构造函数原型对象prototype身上去查找这个方法。</p>
+<li><p>方法的查找规则：首先看对象上是否有方法，如果有就执行这个对象上的方法，如果没有这个方法，那么这时对应的__proto__就会去构造函数原型对象prototype身上去查找这个方法。</p>
 </li>
 </ol>
-<h3 id="代码示例"><a class="markdownIt-Anchor" href="#代码示例"></a> 代码示例</h3>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Star</span><span class="token punctuation">(</span><span class="token parameter">uname<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Star</span><span class="token punctuation">(</span><span class="token parameter">uname<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 	<span class="token keyword">this</span><span class="token punctuation">.</span>uname <span class="token operator">=</span> name<span class="token punctuation">;</span>
 	<span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
 	<span class="token comment">//原型 方法都可以写到这里面去因为他里面的方法都是共享的不会每次都独立开辟空间比价节省内存</span>
@@ -701,32 +693,26 @@ zxy<span class="token punctuation">.</span><span class="token function">sing</sp
 <span class="token keyword">var</span> zxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Fn</span><span class="token punctuation">(</span><span class="token string">'张学友'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Fn</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ldh<span class="token punctuation">.</span>__proto__<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="constructor-构造函数"><a class="markdownIt-Anchor" href="#constructor-构造函数"></a> constructor 构造函数</h3>
-<p>对象原型(<strong>proto</strong>)和构造函数(prototype)原型对象里面都有一个属性constructor属性，constructor我们称为构造函数，因为他指回构造函数本身。</p>
+<h3 id="constructor-构造函数"><a href="#constructor-构造函数" class="headerlink" title="constructor 构造函数"></a>constructor 构造函数</h3><p>对象原型(<strong>proto</strong>)和构造函数(prototype)原型对象里面都有一个属性constructor属性，constructor我们称为构造函数，因为他指回构造函数本身。</p>
 <p>很多情况下我们需要手动的利用constructor这个属性指回原来的构造函数，比如把原型当作对象来存储属性，语法格式为 :构造函数名.原型={}。</p>
 <p>如果我们修改了原来的原型对象，给原型对象赋值的是一个对象则必须手动利用constructor指回原来的构造函数。</p>
-<h3 id="原型链"><a class="markdownIt-Anchor" href="#原型链"></a> 原型链</h3>
-<ol>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><ol>
 <li>只要有对象就有__proto__原型，指向原型对象。</li>
 <li>我们Star原型对象里面的__proto__原型指向的是Object.proptotype。</li>
 </ol>
-<h3 id="js的成员查找机制"><a class="markdownIt-Anchor" href="#js的成员查找机制"></a> js的成员查找机制</h3>
-<ol>
+<h3 id="js的成员查找机制"><a href="#js的成员查找机制" class="headerlink" title="js的成员查找机制"></a>js的成员查找机制</h3><ol>
 <li>当访问一个对象的属性(包括方法)时，首先查找这个对象自身有没有这个属性。</li>
 <li>如果没有就查找它的原型(也就是__proto__指向的prototype)。</li>
 <li>如果还没有找到原型对象的属性（Object的原型对象）。</li>
 <li>以此类推一直找到Object为止(null)。</li>
 <li>__proto__对象原型的意义在于为对象成员查找机制提供一个方向，或者说一条路线。</li>
 </ol>
-<h3 id="原型对象的this指向"><a class="markdownIt-Anchor" href="#原型对象的this指向"></a> 原型对象的this指向</h3>
-<ol>
+<h3 id="原型对象的this指向"><a href="#原型对象的this指向" class="headerlink" title="原型对象的this指向"></a>原型对象的this指向</h3><ol>
 <li>构造函数里面的this指向的是对象实例。</li>
 <li>原型对象里面的this只有在调用的时候才知道指向谁比如创建对象实例后原型对象就指向实例化的对象。</li>
 <li>this一般指向的是函数调用者。</li>
 </ol>
-<h3 id="拓展内置对象"><a class="markdownIt-Anchor" href="#拓展内置对象"></a> 拓展内置对象</h3>
-<h4 id="示例代码如下"><a class="markdownIt-Anchor" href="#示例代码如下"></a> 示例代码如下:</h4>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//拓展原型对象数组</span>
+<h3 id="拓展内置对象"><a href="#拓展内置对象" class="headerlink" title="拓展内置对象"></a>拓展内置对象</h3><h4 id="示例代码如下"><a href="#示例代码如下" class="headerlink" title="示例代码如下:"></a>示例代码如下:</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//拓展原型对象数组</span>
 <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sum</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 	<span class="token keyword">var</span> sum<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
 	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
@@ -776,11 +762,10 @@ console<span class="token punctuation">.</span><span class="token function">log<
       
       <!-- <div class="content">
         继承
- 继承的含义:
-
+继承的含义:
 继承是面向对象编程中的一个重要概念，通过继承可以使子类的实例使用在父类中定义的属性和方法。
 
- 
+在js
       </div> -->
     </a>
   </div>
@@ -799,8 +784,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
       </div>
       <!-- <div class="content">
         javaScript中的面向对象概念(ES6)
- 1. 什么是对象？
-​		1. 现实生活中:万物皆对象，对象是一个具体
+
+1. 什么是对象？​        1. 现实生活中:万物皆对象，对象
       </div> -->
     </a>
   </div>
