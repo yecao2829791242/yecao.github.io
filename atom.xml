@@ -6,7 +6,7 @@
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/"/>
-  <updated>2021-07-17T14:53:57.810Z</updated>
+  <updated>2021-08-15T17:37:58.086Z</updated>
   <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数组和字符串常用方法</title>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/15/api/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/15/api/</id>
+    <published>2021-08-15T14:27:44.000Z</published>
+    <updated>2021-08-15T17:37:58.086Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;数组和字符串常用方法&quot;&gt;数组和字符串常用方法&lt;/h1&gt;&lt;br/&gt;
+
+&lt;h2 id=&quot;数组常用方法&quot;&gt;&lt;a href=&quot;#数组常用方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E5%89%8D%E7%AB%AF/js/"/>
+    
+    
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MVC和MVVM</title>
     <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/16/pattern/"/>
     <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/16/pattern/</id>
     <published>2021-07-16T15:39:14.000Z</published>
-    <updated>2021-07-17T14:53:57.810Z</updated>
+    <updated>2021-08-15T14:49:38.108Z</updated>
     
     
       
