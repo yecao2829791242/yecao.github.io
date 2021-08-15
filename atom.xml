@@ -29,8 +29,8 @@
         
         
     <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;数组和字符串常用方法&quot;&gt;数组和字符串常用方法&lt;/h1&gt;&lt;br/&gt;
-&lt;h2 id=&quot;数组常用方法&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#数组常用方法&quot;&gt;&lt;/a&gt; 数组常用方法&lt;/h2&gt;
-&lt;h3</summary>
+
+&lt;h2 id=&quot;数组常用方法&quot;&gt;&lt;a href=&quot;#数组常用方法&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -60,8 +60,8 @@
         
         
     <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;mvc和mvvm的区别&quot;&gt;mvc和mvvm的区别&lt;/h1&gt;&lt;br/&gt;
-&lt;h2 id=&quot;mvc&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#mvc&quot;&gt;&lt;/a&gt; MVC&lt;/h2&gt;
-&lt;p&gt;MVC 全名是</summary>
+
+&lt;h2 id=&quot;MVC&quot;&gt;&lt;a href=&quot;#MVC&quot; class=&quot;headerlink&quot; title=&quot;MVC&quot;&gt;&lt;/a&gt;MVC&lt;/h2&gt;&lt;p&gt;MVC</summary>
         
       
     
@@ -195,6 +195,33 @@
     
     
     <summary type="html">继承笔记</summary>
+    
+    
+    
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E5%89%8D%E7%AB%AF/js/"/>
+    
+    <category term="笔记" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/%E5%89%8D%E7%AB%AF/js/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="前端" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/js/"/>
+    
+    <category term="笔记" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js的原型、构造函数、原型链</title>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/10/prototype/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/10/prototype/</id>
+    <published>2021-07-10T05:50:00.000Z</published>
+    <updated>2021-08-15T18:06:40.417Z</updated>
+    
+    
+    <summary type="html">原型笔记</summary>
     
     
     
