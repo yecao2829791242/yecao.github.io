@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>MVC和MVVM | yecao</title>
+  <title>正则表达式 | yecao</title>
 
   
     
@@ -553,14 +553,14 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/91022/20/18777/2443627/60f13b23E408f50cf/b89f99a96e30c0eb.png" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/179887/7/14541/4381095/60f13c0bE91df1ae3/ba7a522636e8516f.png" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="title-box">
     <span class="title">
-      MVC和MVVM
+      正则表达式
     </span>
   </div>
   
@@ -577,7 +577,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-07-16</span>
+        <span class="post-time">2021-07-11</span>
       </div>
       
       <div class="post-tags-categories">
@@ -585,12 +585,16 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="">
-              设计模式
+            <a href="/tags/%E5%89%8D%E7%AB%AF/" class="">
+              前端
             </a>
           
-            <a href="/tags/Vue/" class="">
-              Vue
+            <a href="/tags/js/" class="">
+              js
+            </a>
+          
+            <a href="/tags/%E7%AC%94%E8%AE%B0/" class="">
+              笔记
             </a>
           
         </div>
@@ -599,41 +603,225 @@
         <div class="categories">
           <i class="iconfont iconbookmark1"></i>
           
-            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="">
-              设计模式
+            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="">
+              前端
             </a>
           
-            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Vue/" class="">
-              Vue
+            <a href="/categories/%E5%89%8D%E7%AB%AF/js/" class="">
+              js
+            </a>
+          
+            <a href="/categories/%E5%89%8D%E7%AB%AF/js/%E7%AC%94%E8%AE%B0/" class="">
+              笔记
             </a>
           
         </div>
         
       </div>
       <div class="post-content">
-        <h1 class="bamboo-h " id="mvc和mvvm的区别">mvc和mvvm的区别</h1><br/>
+        <h1 class="bamboo-h " id="正则表达式">正则表达式</h1><br/>
 
-<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>MVC 全名是 Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范。</p>
+<h2 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h2><pre class="line-numbers language-none"><code class="language-none">正则表达式是用于匹配字符串中字符组合模式。在javascript中，正则表达式也是对象。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本，例如表单验证：用户名表单只能输入英文字母、数字或者下划线，昵称输入框中可以输入中文(匹配)。此外，正则表达式还常用于过滤掉页面内容中的一些敏感词(替换)，或字符串中获取我们想要的特定部分(提取)等。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="正则表达式的特点"><a href="#正则表达式的特点" class="headerlink" title="正则表达式的特点"></a>正则表达式的特点</h3><ol>
+<li>灵活性，逻辑性和功能性非常的强。</li>
+<li>可以迅速地用简单的方式达到字符串的复杂控制。</li>
+<li>对于刚接触的人来说比较晦涩难懂。比如：^\w+([-+.]\w+)<em>@\w+([-.]\w+)</em>$。</li>
+<li>实际开发，一般都是复制写好的正则表达式，但是要求会使用正则表达式并且根据实际情况修改正则表达式.比如用户名：/^[a-z0-9_-]{3,16}$/。</li>
+</ol>
+<h3 id="创建正则表达式"><a href="#创建正则表达式" class="headerlink" title="创建正则表达式"></a>创建正则表达式</h3><h4 id="在-javascript-中，可以通过两种方式创建一个正则表达式。"><a href="#在-javascript-中，可以通过两种方式创建一个正则表达式。" class="headerlink" title="在 javascript 中，可以通过两种方式创建一个正则表达式。"></a>在 javascript 中，可以通过两种方式创建一个正则表达式。</h4><ol>
+<li><p>通过调用 RegExp 对象的构造函数创建。</p>
+<pre class="line-numbers language-none"><code class="language-none">var 变量名 &#x3D; new RegExp(&#x2F;表达式&#x2F;);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>通过字面量创建</p>
+<pre class="line-numbers language-none"><code class="language-none">var 变量名 &#x3D; &#x2F;表达式&#x2F;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="测试正则表达式-test-方法"><a href="#测试正则表达式-test-方法" class="headerlink" title="测试正则表达式 test 方法"></a>测试正则表达式 test 方法</h3></li>
+</ol>
 <ul>
-<li>Model（模型）：是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据。</li>
-<li>View（视图）：是应用程序中处理数据显示的部分。通常视图是依据模型数据创建的。</li>
-<li>Controller（控制器）：是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。</li>
+<li>test()正则对象方法，用于检测字符串是否符合规则，该对象会返回 true 或 false，其参数是测试字符串。</li>
 </ul>
-<p>MVC 的思想：一句话描述就是 Controller 负责将 Model 的数据用 View 显示出来，换句话说就是在 Controller 里面把 Model 的数据赋值给 View。</p>
-<h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><h3 id="MVVM-新增了-VM-类"><a href="#MVVM-新增了-VM-类" class="headerlink" title="MVVM 新增了 VM 类"></a>MVVM 新增了 VM 类</h3><ul>
-<li>ViewModel 层：做了两件事达到了数据的双向绑定 一是将【模型】转化成【视图】，即将后端传递的数据转化成所看到的页面。实现的方式是：数据绑定。二是将【视图】转化成【模型】，即将所看到的页面转化成后端的数据。实现的方式是：DOM 事件监听。</li>
-</ul>
-<p>MVVM 与 MVC 最大的区别就是：它实现了 View 和 Model 的自动同步，也就是当 Model 的属性改变时，我们不用再自己手动操作 Dom 元素，来改变 View 的显示，而是改变属性后该属性对应 View 层显示会自动改变（对应Vue数据驱动的思想）<br>整体看来，MVVM 比 MVC 精简很多，不仅简化了业务与界面的依赖，还解决了数据频繁更新的问题，不用再用选择器操作 DOM 元素。因为在 MVVM 中，View 不知道 Model 的存在，Model 和 ViewModel 也观察不到 View，这种低耦合模式提高代码的可重用性。</p>
-<pre><code>&#123;% span red, 注意：Vue 并没有完全遵循 MVVM 的思想 这一点官网自己也有说明。 %&#125;
-</code></pre>
-<p>那么问题来了 为什么官方要说 Vue 没有完全遵循 MVVM 思想呢？</p>
-<pre><code>严格的 MVVM 要求 View 不能和 Model 直接通信，而 Vue 提供了$refs 这个属性，让 Model 可以直接操作 View，违反了这一规定，    所以说 Vue 没有完全遵循 MVVM。
-</code></pre>
-<p>引用自:</p>
-<ul>
-<li>链接：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6961222829979697165">https://juejin.cn/post/6961222829979697165</a></li>
-</ul>
+<p><code>regexobj.test(str)</code></p>
+<ol>
+<li>regexobj 是写的正则表达式</li>
+<li>str 我们要测试的文本</li>
+<li>就是检测 str 文本是否符合我们写的正则表达式规范。</li>
+</ol>
+<h3 id="正则表达式中的特殊字符"><a href="#正则表达式中的特殊字符" class="headerlink" title="正则表达式中的特殊字符"></a>正则表达式中的特殊字符</h3><h4 id="正则表达式的组成"><a href="#正则表达式的组成" class="headerlink" title="正则表达式的组成"></a>正则表达式的组成</h4><p>一个正则表达式可以由简单的字符构成，比如/abc/，也可以是简单和特殊字符的组合，比如/ab*c/。其中特殊字符也被称为元字符，在正则表达式中是具有特殊意义的专用符号，如、$、+等。</p>
+<h3 id="边界符"><a href="#边界符" class="headerlink" title="边界符"></a>边界符</h3><ol>
+<li>^:表示匹配首行的文本(以谁开始)</li>
+<li>$:表示匹配行尾的文本(以谁结束)</li>
+</ol>
+<p>代码示例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//边界符</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^abc</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"aabc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abcabc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
+<span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^abc$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abcabc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><pre class="line-numbers language-none"><code class="language-none">字符类表示有一系列字符可供选择，只要匹配其中一个就可以了。所有可供选择的字符都放在方括号内。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">[-]方括号内部 范围符-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>代码示例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//字符类：[]表示由一系列字符可供选择，只要匹配其中一个就可以</span>
+<span class="token comment">//只要包含a和b或者c都行</span>
+<span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[abc]</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"aredf"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"blue"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"color"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"red"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//三选一只有a和b或者c才返回true</span>
+<span class="token keyword">var</span> res2 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[abc]$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res2<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res2<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res2<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res2<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//匹配26个字母当中任何一个(不包括大写26个字母) 返回true</span>
+<span class="token keyword">var</span> res3 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[a-z]$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"e"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"f"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ol>
+<li>字符组合<br><code>/^[a-zA-Z0-9_-]$/</code></li>
+<li>[^]方括号内部 取反符^<br><code>/^[^abc]$</code></li>
+</ol>
+<p>代码示例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//字符组合</span>
+<span class="token keyword">var</span> res4 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[abcA-z_-]$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//取反字符组合</span>
+<span class="token keyword">var</span> res4 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[^abcA-z_-]$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"_"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res4<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"+"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="量词符"><a href="#量词符" class="headerlink" title="量词符"></a>量词符</h3><p>量词符用来设定某个模式出现的次数</p>
+<table>
+<thead>
+<tr>
+<th>量词</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td align="center">重复零次或更多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td align="center">重复一次或跟多次</td>
+</tr>
+<tr>
+<td>？</td>
+<td align="center">重复零次或一次</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td align="center">重复 n 次</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td align="center">重复 n 次或更多次</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td align="center">重复 n 到 m 次</td>
+</tr>
+</tbody></table>
+<p>代码示例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> res5 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[abcA-z0-9_-]&#123;6,16&#125;$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res5<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"name-andy"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res5<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"andy_red"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res5<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"andyjFGHXH5678z"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res5<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"andy!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>表单验证案例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//表单验证案例</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[a-zA-Z0-9_-]&#123;6,16&#125;$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> text <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"input"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> font <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"span"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+text<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"blur"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    font<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"输入的格式正确!"</span><span class="token punctuation">;</span>
+    font<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">"right"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    font<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"请输入内容哦！"</span><span class="token punctuation">;</span>
+    font<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">"blue"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    font<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"输入的格式错误！请重新输入！"</span><span class="token punctuation">;</span>
+    font<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">"erro"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="括号总结"><a href="#括号总结" class="headerlink" title="括号总结"></a>括号总结</h3><ol>
+<li>大括号 量词符 里面表示重复次数</li>
+<li>中括号字符集合。匹配方括号中的任意字符(多选一)</li>
+<li>小括号表示优先级</li>
+</ol>
+<h3 id="预定义类"><a href="#预定义类" class="headerlink" title="预定义类"></a>预定义类</h3><table>
+<thead>
+<tr>
+<th>预定义类</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d</td>
+<td align="center">匹配 0-9 任意数字，相当于[0-9]</td>
+</tr>
+<tr>
+<td>\D</td>
+<td align="center">匹配 0-9 以外的字符，相当于[^0-9]</td>
+</tr>
+<tr>
+<td>\w</td>
+<td align="center">匹配任意的字母，数字和下划线，相当于[A-Za-z0-9]</td>
+</tr>
+<tr>
+<td>\W</td>
+<td align="center">除所有字母、数字和下划线以外的字符，相当于[^a-za-z0-9]</td>
+</tr>
+<tr>
+<td>\s</td>
+<td align="center">匹配空格(包括换行符、制表符、空格等)，相当于[\t\r\n\v\f]</td>
+</tr>
+<tr>
+<td>\S</td>
+<td align="center">匹配非空格的字符，相当于[^\t\r\n\v\f]</td>
+</tr>
+</tbody></table>
+<h3 id="表单验证案例分析"><a href="#表单验证案例分析" class="headerlink" title="表单验证案例分析"></a>表单验证案例分析</h3><ol>
+<li>手机号码：/^1[3|4|5|7|8]\d{9}$/</li>
+<li>QQ:[1-9][0-9]{4,}(腾讯 QQ 号从 10000 开始) 3.昵称中文：^[\u4e00-\u9fa5]{2,8}$</li>
+</ol>
+<h3 id="正则表达式中的替换"><a href="#正则表达式中的替换" class="headerlink" title="正则表达式中的替换"></a>正则表达式中的替换</h3><p>replace()方法可以实现替换字符操作，用来替换的参数可以是一个字符串或是一个正则表达式。</p>
+<p><code>string.replace(reg/substr/replace)</code></p>
+<ol>
+<li>第一个参数：被替换的字符串或者正则表达式</li>
+<li>第二个参数：替换为的字符串</li>
+<li>返回值是一个替换完毕的新字符串</li>
+</ol>
+<h3 id="正则表达式参数"><a href="#正则表达式参数" class="headerlink" title="正则表达式参数"></a>正则表达式参数</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;表达式&#x2F;[switch]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>switch(也称为修饰符)按照什么样的模式来匹配有三种值：</p>
+<ul>
+<li>g:全局匹配</li>
+<li>i:忽略大小</li>
+<li>gi:全局匹配+忽略大小写</li>
+</ul>
+<p>案例:</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> text <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"textarea"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  div<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> text<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">激情|傻子</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">"**"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
       </div>
       
         <div class="copyright">
@@ -643,7 +831,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/07/16/pattern/" target="_blank" title="MVC和MVVM">https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/16/pattern/</a>
+    <a href="/2021/07/11/regexp/" target="_blank" title="正则表达式">https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/07/11/regexp/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -663,20 +851,19 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/196092/29/13326/1477100/60f13bf8E8063914b/4fd7f0bb967736e0.png" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/91022/20/18777/2443627/60f13b23E408f50cf/b89f99a96e30c0eb.png" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/08/15/api/" class="post-nav-link">
+    <a href="/2021/07/16/pattern/" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div>数组和字符串常用方法</div>
+        <div>MVC和MVVM</div>
       </div>
       
       <!-- <div class="content">
-        数组和字符串常用方法
+        mvc和mvvm的区别
 
-数组常用方法1. instanceof 运算符
-instanceof 可以判断一个对象是否是某个
+MVCMVC 全名是 Model View Controller，是模型(model)－视图(
       </div> -->
     </a>
   </div>
@@ -685,19 +872,17 @@ instanceof 可以判断一个对象是否是某个
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/179887/7/14541/4381095/60f13c0bE91df1ae3/ba7a522636e8516f.png" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/184817/35/8935/3025918/60c5bbeeEe0d873a8/1a1f6935bcea425f.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/07/11/regexp/" class="post-nav-link">
+    <a href="/2021/07/10/newadd/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>正则表达式</div>
+        <div>es5新增方法</div>
       </div>
       <!-- <div class="content">
-        正则表达式
-
-什么是正则表达式正则表达式是用于匹配字符串中字符组合模式。在javascript中，正则表达式也是对象。
-
+        ES5中新增方法
+迭代遍历方法：forEach() map() filter() some() every()1.arr
       </div> -->
     </a>
   </div>
