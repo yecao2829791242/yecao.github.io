@@ -6,7 +6,7 @@
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/"/>
-  <updated>2021-08-15T17:53:06.960Z</updated>
+  <updated>2021-08-17T13:37:42.280Z</updated>
   <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue的生命周期</title>
+    <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/17/vue/"/>
+    <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/17/vue/</id>
+    <published>2021-08-17T12:57:20.000Z</published>
+    <updated>2021-08-17T13:37:42.280Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、生命周期是什么&quot;&gt;&lt;a href=&quot;#一、生命周期是什么&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://gitee.com/zjzh_yecao/zjzh_yecao.git/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>数组和字符串常用方法</title>
