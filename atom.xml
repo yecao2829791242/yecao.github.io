@@ -6,7 +6,7 @@
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/"/>
-  <updated>2021-08-17T13:47:35.724Z</updated>
+  <updated>2021-08-17T13:49:44.904Z</updated>
   <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/17/vue/"/>
     <id>https://gitee.com/zjzh_yecao/zjzh_yecao.git/2021/08/17/vue/</id>
     <published>2021-08-17T12:57:20.000Z</published>
-    <updated>2021-08-17T13:47:35.724Z</updated>
+    <updated>2021-08-17T13:49:44.904Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一-生命周期是什么&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-生命周期是什么&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;一、生命周期是什么&quot;&gt;&lt;a href=&quot;#一、生命周期是什么&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -54,8 +54,8 @@
         
         
     <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;数组和字符串常用方法&quot;&gt;数组和字符串常用方法&lt;/h1&gt;&lt;br/&gt;
-&lt;h2 id=&quot;数组常用方法&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#数组常用方法&quot;&gt;&lt;/a&gt; 数组常用方法&lt;/h2&gt;
-&lt;h3</summary>
+
+&lt;h2 id=&quot;数组常用方法&quot;&gt;&lt;a href=&quot;#数组常用方法&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -85,8 +85,8 @@
         
         
     <summary type="html">&lt;h1 class=&quot;bamboo-h &quot; id=&quot;mvc和mvvm的区别&quot;&gt;mvc和mvvm的区别&lt;/h1&gt;&lt;br/&gt;
-&lt;h2 id=&quot;mvc&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#mvc&quot;&gt;&lt;/a&gt; MVC&lt;/h2&gt;
-&lt;p&gt;MVC 全名是</summary>
+
+&lt;h2 id=&quot;MVC&quot;&gt;&lt;a href=&quot;#MVC&quot; class=&quot;headerlink&quot; title=&quot;MVC&quot;&gt;&lt;/a&gt;MVC&lt;/h2&gt;&lt;p&gt;MVC</summary>
         
       
     

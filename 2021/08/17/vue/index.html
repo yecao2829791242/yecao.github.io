@@ -553,7 +553,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img11.360buyimg.com/ddimg/jfs/t1/187839/28/18963/19135/611bb52cE6bcd77ed/5030f8578650b48f.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/198990/33/3677/25299/611bbde2E810ca467/57dd9b6c60608326.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
@@ -603,71 +603,66 @@
         
       </div>
       <div class="post-content">
-        <h2 id="一-生命周期是什么"><a class="markdownIt-Anchor" href="#一-生命周期是什么"></a> 一、生命周期是什么</h2>
-<p>我的理解就是一个客观存在的事物从他的诞生到死亡会经历一系列过程，那么这个过程就是生命周期。在Vue中就是实例从创建到销毁的过程就是生命周期，即指从创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程我们可以把组件比喻成工厂里面的一条流水线，每个工人（生命周期）站在各自的岗位，当任务流转到工人身边的时候，工人就开始工作PS：在<code>Vue</code>生命周期钩子会自动绑定 <code>this</code> 上下文到实例中，因此你可以访问数据，对 <code>property</code> 和方法进行运算这意味着<strong>你不能使用箭头函数来定义一个生命周期方法</strong> (例如 <code>created: () =&gt; this.fetchTodos()</code>)。</p>
-<h2 id="二-生命周期有哪些"><a class="markdownIt-Anchor" href="#二-生命周期有哪些"></a> 二、生命周期有哪些</h2>
-<p>Vue生命周期总共可以分为8个阶段：创建前后, 载入前后,更新前后,销毁前销毁后，以及一些特殊场景的生命周期</p>
+        <h2 id="一、生命周期是什么"><a href="#一、生命周期是什么" class="headerlink" title="一、生命周期是什么"></a>一、生命周期是什么</h2><p>我的理解就是一个客观存在的事物从他的诞生到死亡会经历一系列过程，那么这个过程就是生命周期。在Vue中就是实例从创建到销毁的过程就是生命周期，即指从创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程我们可以把组件比喻成工厂里面的一条流水线，每个工人（生命周期）站在各自的岗位，当任务流转到工人身边的时候，工人就开始工作PS：在<code>Vue</code>生命周期钩子会自动绑定 <code>this</code> 上下文到实例中，因此你可以访问数据，对 <code>property</code> 和方法进行运算这意味着<strong>你不能使用箭头函数来定义一个生命周期方法</strong> (例如 <code>created: () =&gt; this.fetchTodos()</code>)。</p>
+<h2 id="二、生命周期有哪些"><a href="#二、生命周期有哪些" class="headerlink" title="二、生命周期有哪些"></a>二、生命周期有哪些</h2><p>Vue生命周期总共可以分为8个阶段：创建前后, 载入前后,更新前后,销毁前销毁后，以及一些特殊场景的生命周期</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">生命周期</th>
-<th style="text-align:left">描述</th>
+<th align="left">生命周期</th>
+<th align="left">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:left">beforeCreate</td>
-<td style="text-align:left">组件实例被创建之初</td>
+<tbody><tr>
+<td align="left">beforeCreate</td>
+<td align="left">组件实例被创建之初</td>
 </tr>
 <tr>
-<td style="text-align:left">created</td>
-<td style="text-align:left">组件实例已经完全创建</td>
+<td align="left">created</td>
+<td align="left">组件实例已经完全创建</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeMount</td>
-<td style="text-align:left">组件挂载之前</td>
+<td align="left">beforeMount</td>
+<td align="left">组件挂载之前</td>
 </tr>
 <tr>
-<td style="text-align:left">mounted</td>
-<td style="text-align:left">组件挂载到实例上去之后</td>
+<td align="left">mounted</td>
+<td align="left">组件挂载到实例上去之后</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeUpdate</td>
-<td style="text-align:left">组件数据发生变化，更新之前</td>
+<td align="left">beforeUpdate</td>
+<td align="left">组件数据发生变化，更新之前</td>
 </tr>
 <tr>
-<td style="text-align:left">updated</td>
-<td style="text-align:left">组件数据更新之后</td>
+<td align="left">updated</td>
+<td align="left">组件数据更新之后</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeDestroy</td>
-<td style="text-align:left">组件实例销毁之前</td>
+<td align="left">beforeDestroy</td>
+<td align="left">组件实例销毁之前</td>
 </tr>
 <tr>
-<td style="text-align:left">destroyed</td>
-<td style="text-align:left">组件实例销毁之后</td>
+<td align="left">destroyed</td>
+<td align="left">组件实例销毁之后</td>
 </tr>
 <tr>
-<td style="text-align:left">activated</td>
-<td style="text-align:left">keep-alive 缓存的组件激活时</td>
+<td align="left">activated</td>
+<td align="left">keep-alive 缓存的组件激活时</td>
 </tr>
 <tr>
-<td style="text-align:left">deactivated</td>
-<td style="text-align:left">keep-alive 缓存的组件停用时调用</td>
+<td align="left">deactivated</td>
+<td align="left">keep-alive 缓存的组件停用时调用</td>
 </tr>
 <tr>
-<td style="text-align:left">errorCaptured</td>
-<td style="text-align:left">捕获一个来自子孙组件的错误时被调用</td>
+<td align="left">errorCaptured</td>
+<td align="left">捕获一个来自子孙组件的错误时被调用</td>
 </tr>
-</tbody>
-</table>
-<h2 id="三-生命周期总体流程"><a class="markdownIt-Anchor" href="#三-生命周期总体流程"></a> 三、生命周期总体流程</h2>
-<p><code>Vue</code>生命周期流程图:</p>
+</tbody></table>
+<h2 id="三、生命周期总体流程"><a href="#三、生命周期总体流程" class="headerlink" title="三、生命周期总体流程"></a>三、生命周期总体流程</h2><p><code>Vue</code>生命周期流程图:</p>
 <div class="gallery ">
-              <p><img "" class="lazyload placeholder" data-original="https://img10.360buyimg.com/ddimg/jfs/t1/198990/33/3677/25299/611bbde2E810ca467/57dd9b6c60608326.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="vue生命周期流程图" /></p>
+              <p><img "" class="lazyload placeholder" data-original="https://img13.360buyimg.com/ddimg/jfs/t1/203293/12/1842/717301/611bb868E8d12308a/dc6a93b4bb2aeae2.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="vue生命周期流程图"></p>
             </div>
-<h3 id="具体分析"><a class="markdownIt-Anchor" href="#具体分析"></a> 具体分析</h3>
-<p><strong>beforeCreate -&gt; created</strong></p>
+
+<h3 id="具体分析"><a href="#具体分析" class="headerlink" title="具体分析"></a>具体分析</h3><p><strong>beforeCreate -&gt; created</strong></p>
 <ul>
 <li>初始化<code>vue</code>实例，进行数据观测</li>
 </ul>
@@ -716,51 +711,47 @@
 <li>完全销毁一个实例。可清理它与其它实例的连接，解绑它的全部指令及事件监听器</li>
 <li>并不能清除DOM，仅仅销毁实例</li>
 </ul>
-<h3 id="使用场景分析"><a class="markdownIt-Anchor" href="#使用场景分析"></a> 使用场景分析</h3>
-<table>
+<h3 id="使用场景分析"><a href="#使用场景分析" class="headerlink" title="使用场景分析"></a>使用场景分析</h3><table>
 <thead>
 <tr>
-<th style="text-align:left">生命周期</th>
-<th style="text-align:left">描述</th>
+<th align="left">生命周期</th>
+<th align="left">描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:left">beforeCreate</td>
-<td style="text-align:left">执行时组件实例还未创建，通常用于插件开发中执行一些初始化任务</td>
+<tbody><tr>
+<td align="left">beforeCreate</td>
+<td align="left">执行时组件实例还未创建，通常用于插件开发中执行一些初始化任务</td>
 </tr>
 <tr>
-<td style="text-align:left">created</td>
-<td style="text-align:left">组件初始化完毕，各种数据可以使用，常用于异步数据获取</td>
+<td align="left">created</td>
+<td align="left">组件初始化完毕，各种数据可以使用，常用于异步数据获取</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeMount</td>
-<td style="text-align:left">未执行渲染、更新，dom未创建</td>
+<td align="left">beforeMount</td>
+<td align="left">未执行渲染、更新，dom未创建</td>
 </tr>
 <tr>
-<td style="text-align:left">mounted</td>
-<td style="text-align:left">初始化结束，dom已创建，可用于获取访问数据和dom元素</td>
+<td align="left">mounted</td>
+<td align="left">初始化结束，dom已创建，可用于获取访问数据和dom元素</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeUpdate</td>
-<td style="text-align:left">更新前，可用于获取更新前各种状态</td>
+<td align="left">beforeUpdate</td>
+<td align="left">更新前，可用于获取更新前各种状态</td>
 </tr>
 <tr>
-<td style="text-align:left">updated</td>
-<td style="text-align:left">更新后，所有状态已是最新</td>
+<td align="left">updated</td>
+<td align="left">更新后，所有状态已是最新</td>
 </tr>
 <tr>
-<td style="text-align:left">beforeDestroy</td>
-<td style="text-align:left">销毁前，可用于一些定时器或订阅的取消</td>
+<td align="left">beforeDestroy</td>
+<td align="left">销毁前，可用于一些定时器或订阅的取消</td>
 </tr>
 <tr>
-<td style="text-align:left">destroyed</td>
-<td style="text-align:left">组件已销毁，作用同上</td>
+<td align="left">destroyed</td>
+<td align="left">组件已销毁，作用同上</td>
 </tr>
-</tbody>
-</table>
-<h2 id="四-数据请求在created和mouted的区别"><a class="markdownIt-Anchor" href="#四-数据请求在created和mouted的区别"></a> 四、数据请求在created和mouted的区别</h2>
-<p><code>created</code>是在组件实例一旦创建完成的时候立刻调用，这时候页面<code>dom</code>节点并未生成<code>mounted</code>是在页面<code>dom</code>节点渲染完毕之后就立刻执行的触发时机上<code>created</code>是比<code>mounted</code>要更早的两者相同点：都能拿到实例对象的属性和方法讨论这个问题本质就是触发的时机，放在<code>mounted</code>请求有可能导致页面闪动（页面<code>dom</code>结构已经生成），但如果在页面加载前完成则不会出现此情况建议：放在<code>create</code>生命周期当中。</p>
+</tbody></table>
+<h2 id="四、数据请求在created和mouted的区别"><a href="#四、数据请求在created和mouted的区别" class="headerlink" title="四、数据请求在created和mouted的区别"></a>四、数据请求在created和mouted的区别</h2><p><code>created</code>是在组件实例一旦创建完成的时候立刻调用，这时候页面<code>dom</code>节点并未生成<code>mounted</code>是在页面<code>dom</code>节点渲染完毕之后就立刻执行的触发时机上<code>created</code>是比<code>mounted</code>要更早的两者相同点：都能拿到实例对象的属性和方法讨论这个问题本质就是触发的时机，放在<code>mounted</code>请求有可能导致页面闪动（页面<code>dom</code>结构已经生成），但如果在页面加载前完成则不会出现此情况建议：放在<code>create</code>生命周期当中。</p>
 
       </div>
       
@@ -803,10 +794,9 @@
       </div>
       <!-- <div class="content">
         数组和字符串常用方法
- 数组常用方法
- 1. instanceof 运算符
 
-instanceof 可以判断一个对象是否
+数组常用方法1. instanceof 运算符
+instanceof 可以判断一个对象是否是某个
       </div> -->
     </a>
   </div>
